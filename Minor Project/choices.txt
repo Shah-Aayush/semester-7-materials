@@ -1,0 +1,176 @@
+56. Teacher Assistance App and Website
+20. object recognition and voice based assistant for the blind person
+32. Optical Character recognization in education domain
+31. Optical Character recognization in healthcare domain
+126. Timetable generator
+159. Speech recognition
+163. Attendance Management System using Face detection
+116. spam comment detection from social media
+135. Speech emotion recognition 
+25. Facial Emotion Detection Using Deep Learning
+18. Deepfake
+121. Stock Market Prediction using Deep Learning
+12. Fake news detection using Deep Learning
+13. Human Action Recognition using Deep Learning
+153. Detecting Data Leaks Using SQL in Cloud ecosystems
+97. 3D image reconstruction
+59. Text Analyzer
+14. sentiment analysis using deep learning
+7. Image segmentation of medical images using U-Net architecture
+27. user detection through profile building and system access
+96. video summarization
+4. Human Disease Classification and Segmentation using Deep Learning/Machine Learning
+6. Data Augmentation of medical images using GAN
+8. Detection of Parkinson's diease using deep learning model
+10. Comparision of ML/DL algorithms for detection of Parkinson's diease at early stage
+
+___
+
+
+Minor Project BTech VII Choice form
+Dear Students,
+
+For 7th sem minor project, you are required to provide exactly 25 distinct choices of the project titles from the list of definitions shared by us. Note that it is mandatory for all the students to fill this form on or before 12th July 2022, 1 pm. Even if you want to work on your own definition, it is mandatory to fill up 25 distinct choices along with your definition.
+
+Maximum 2 students are allowed to work in a group. Any one of the student from the group has to fill this form and no duplicate or multiple entries for the group will be allowed, if found so their choice form will not be considered and final allocation of topic and guide will be done by coordinators.  Note that few definitions do not require more than one student so in such cases, the definition will be assigned to only one student.
+
+The allocation of project definitions will be done based on the submitted choices using FCFS (First Come, First Serve) algorithm. If none of the submitted choices are available for allocation OR no choice form is submitted , then the definition will be assigned from the available project titles.
+
+19bce245@nirmauni.ac.in Switch account
+ 
+Draft saved
+The name and photo associated with your Google account will be recorded when you upload files and submit this form. Your email is not part of your response.
+* Required
+Student Name who is filling form on behalf of group i.e Student-1 from group
+*
+Aayush Shah
+Name of Student -2 from group
+*
+Saurin Prajapati
+Roll Number of Student who is filling form on behalf of group i.e Student-1 from group
+*
+19BCE245
+SPI and PPI of Student who is filling form on behalf of group i.e Student-1 from group (eg. SPI=7, PPI=6)
+*
+SPI=7.85, PPI=8.06
+Roll Number of Student -2 from group
+*
+19BCE239
+SPI and PPI of Student who is filling form on behalf of group i.e Student-1 from group (eg. SPI=7, PPI=6)
+*
+SPI=7.95, PPI=7.96
+Own choice Title
+*
+This has to be entered only after consulting a guide and if guide is confirmed going to guide your group for the same, else it will not be considered and you will be allocated choice from other filled titles in choice form. If no own choice title mention NA. Also, even if you have approached a prospective guide and He/She is overloaded then the allocation will not be done with them and you will be allotted title from the preferences that you have filled.
+NA
+Guide (Faculty) name who will be guiding you for the mentioned own choice title
+*
+Ensure that correct full name of faculty is mentioned here. If you do not have an own choice title then mention NA. Format for entering faculty name Prof. followed with Full Name Eg. Prof. Shivani Desai
+NA
+Choice 1
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+56. Teacher Assistance App and Website
+Choice 2
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+20. object recognition and voice based assistant for the blind person
+Choice 3
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+32. Optical Character recognization in education domain
+Choice 4
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+126. Timetable generator
+Choice 5
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+31. Optical Character recognization in healthcare domain
+Choice 6
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+159. Speech recognition
+Choice 7
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+163. Attendance Management System using Face detection
+Choice 8
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+116. spam comment detection from social media
+Choice 9
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+135. Speech emotion recognition 
+Choice 10
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+25. Facial Emotion Detection Using Deep Learning
+Choice 11
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+18. Deepfake
+Choice 12
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+121. Stock Market Prediction using Deep Learning
+Choice 13
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+12. Fake news detection using Deep Learning
+Choice 14
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+13. Human Action Recognition using Deep Learning
+Choice 15
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+14. sentiment analysis using deep learning
+Choice 16
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+27. user detection through profile building and system access
+Choice 17
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+153. Detecting Data Leaks Using SQL in Cloud ecosystems
+Choice 18
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+97. 3D image reconstruction
+Choice 19
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+59. Text Analyzer
+Choice 20
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+7. Image segmentation of medical images using U-Net architecture
+Choice 21
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+96. video summarization
+Choice 22
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+4. Human Disease Classification and Segmentation using Deep Learning/Machine Learning
+Choice 23
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+6. Data Augmentation of medical images using GAN
+Choice 24
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+8. Detection of Parkinson's diease using deep learning model
+Choice 25
+*
+Select distinct Choice Preference from the PDF file which contains list of definitions collected from all faculty members and no duplicate choices to be selected if done so then choice form will not be considered and final allocation will be done by coordinators. Write serial number mentioned in PDF file as your choice over here.
+10. Comparision of ML/DL algorithms for detection of Parkinson's diease at early stage
+I and my group partner will adhere to all guidelines for Minor Project and fill form accordingly and work on the allocated title to the best of our ability. If our project work is found unacceptable after consecutive reviews we shall be eligible for disciplinary actions as per NU rules.
+*
+Yes we agree
+Upload the details of approval by the specified guide if you have opt for own choice and talked with mentor
+Never submit passwords through Google Forms.
+This form was created inside of Nirmauni.ac.in. Report Abuse
+Google Forms
