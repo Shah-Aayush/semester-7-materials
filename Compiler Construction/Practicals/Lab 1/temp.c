@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <string.h>
 /*
-this is multiline comment 
+this is multiline comment 1
 ok bye
 */
 int main() {
@@ -10,23 +11,20 @@ int main() {
 	int ok = 3;
 	int a1 = 3;
 	float bye = 1.0;
+	float byebye = 1;
+	char tata[10] = "see you!";
 	while(ok>=0){
 		ok-=1;
 	};
+	/*
+	this is multiline comment 2****2
+	ok bye
+	*/
 	return 0;
 }
 /*
-this is multiline comment no.2*3
+this is multiline comment 3
 ok bye
 */
-
-/*
-this is multiline comment no.3
-ok bye
-*/
-
-
-/*
-this is multiline comment no.4
-ok bye
-*/
+ગુજરાતી
+@

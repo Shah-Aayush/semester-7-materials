@@ -9,4 +9,7 @@
 2. `gcc lex.yy.c`
 3. `./a.out < temp.c`
 
-(?!\/*)
+---
+### tips
+
+> `(?!\/*)` : regex to ignore `/*` for multiline comments

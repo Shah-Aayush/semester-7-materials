@@ -5,3 +5,6 @@
 5. (e.d)% phi(n) = 1; {d!=p,d!=q} | {d = e - 1 mod phi(n)}
 C = (M^e)%n
 M = (C^d)%n
+
+---
+> [digital signature code resources](https://cryptobook.nakov.com/digital-signatures/rsa-sign-verify-examples)
