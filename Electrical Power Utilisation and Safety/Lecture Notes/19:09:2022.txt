@@ -1,0 +1,13 @@
+# Electrical Power Utilization and Safety
+> 19 Sept, 2022
+- requirements of a good weld
+- welding electrods /rods
+- types of wlding electrods
+	- non consumable electrods 
+	- consumable electrods
+- comparision b/w AC and DC
+- comparision b/w resistance and arc welding
+
+- estimate rating of an induction furnace to melt 2 tons of zink in one hour if it operates at an efficiency of 80 percent. specific heat of zink : 0.1. Latent heat of fusion of zink : 26.67 kcal/kg. melting point : 555 C. starting pt :35 C.
+	- Heat energy = m (s(t2-t1)+L)
+	
