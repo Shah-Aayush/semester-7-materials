@@ -1,0 +1,1 @@
+- low frequency induction furnace operating at 10 walts. In seconds circuit takes the 5 kilowatts at .5 power factor when the hearth is full. In the seconday voltage maintain at constant. estimate the power absorbed and power factor when the hearth is half full. assume the resistant of the secondary circuit to be doubled and reactance to be same.

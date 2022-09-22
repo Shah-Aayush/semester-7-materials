@@ -7,6 +7,7 @@ void yyerror(char*);
 int yywrap();
 %}
 
+
 %token ID NUM IF THEN LE GE EQ NE OR AND ELSE WHILE FOR DO
 %right '='
 %left AND OR
@@ -24,6 +25,7 @@ ST: IF'('E2')' ST1
  | WHILE'('E2')''{'ST1';''}'
  | FOR'('E';'E2';'E')''{'ST1';''}'
  | DO'{'ST1';''}'WHILE'('E2')'
+ | E';'
  ;
 ST1: ST 
  | E
