@@ -1,0 +1,36 @@
+29/09/2022
+# Regrigeration
+	- thermostate setting to be changed in winter
+	- avg temp : 40F
+	- process of cooling substance
+	- Application of refrigeration
+		- storage of food beverages, ice creams industries, 
+		- post mortem
+		- medical
+	- refrigerators and heat pumps
+		- purpose is heat a medium warmer than the surroundings
+	- terminologies of refrigeration
+		- capacity of refrigeration unit
+			- expressed by their ollign capacity
+	- 1 ton = 12000 BTU
+	- latent heat of ice = 336 kj/kg
+	- one ton of refrigeration = 233.333 kj/min
+		> 3.8889 kj/sec
+	- coefficient of performance
+		- ratio of heat extracted in a given time to the work input.
+		- always greater than 1.
+		> The COP usually exceeds 1, especially in heat pumps, because, instead of just converting work to heat (which, if 100% efficient, would be a COP of 1), it pumps additional heat from a heat source to where the heat is required. Most air conditioners have a COP of 2.3 to 3.5.
+	- examples of refrigerants
+		- air
+		- ammonia
+		- co2
+		- so2
+		- freon
+		- methyl chloride
+		- methylene chloride
+	- two types of refrigerants
+		- primary
+		- secondary
+	- refrigeration cyccle and its components 
+		> air refrigeratin system
+	- 
