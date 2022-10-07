@@ -1205,3 +1205,1274 @@ Aayushs-MBP: Practical 3/ $ hadoop jar wc.jar WordCount /prac3/input /prac3/outp
 2022-09-30 13:04:22,082 INFO mapreduce.Job: The url to track the job: http://Aayushs-MacBook-Pro.local:8088/proxy/application_1664521921722_0001/
 2022-09-30 13:04:22,082 INFO mapreduce.Job: Running job: job_1664521921722_0001
 
+--- 07/10/2022
+Last login: Fri Oct  7 11:49:14 on ttys005
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Aayushs-MBP: ~/ $ source ~/.bashrc
+Aayushs-MBP: ~/ $ ls
+Adlm
+AndroidStudioProjects
+Applications
+Cisco Packet Tracer 8.0.1
+Creative Cloud Files
+Desktop
+Documents
+Downloads
+Library
+Movies
+Music
+OneDrive
+PacketTracer7
+Pictures
+Public
+Samsung
+VirtualBox VMs
+dumps
+eclipse
+eclipse-workspace
+flutter
+iCloud Drive (Archive)
+logisim
+nltk_data
+node_modules
+opt
+package-lock.json
+package.json
+seaborn-data
+shahaayush349@gmail.com Creative Cloud Files
+tmp
+yarn.lock
+Aayushs-MBP: ~/ $ ls
+Adlm
+AndroidStudioProjects
+Applications
+Cisco Packet Tracer 8.0.1
+Creative Cloud Files
+Desktop
+Documents
+Downloads
+Library
+Movies
+Music
+OneDrive
+PacketTracer7
+Pictures
+Public
+Samsung
+VirtualBox VMs
+dumps
+eclipse
+eclipse-workspace
+flutter
+iCloud Drive (Archive)
+logisim
+nltk_data
+node_modules
+opt
+package-lock.json
+package.json
+seaborn-data
+shahaayush349@gmail.com Creative Cloud Files
+tmp
+yarn.lock
+Aayushs-MBP: ~/ $ cd documents
+Aayushs-MBP: documents/ $ cd 'sem 7'
+Aayushs-MBP: sem 7/ $ s
+-bash: s: command not found
+Aayushs-MBP: sem 7/ $ ks
+-bash: ks: command not found
+Aayushs-MBP: sem 7/ $ ls
+Big Data Analytics			Elements of Marketing
+BlockChain Technology			Internship
+Compiler Construction			LICENSE
+Digital Image and Video Processing	Minor Project
+Electrical Power Utilisation and Safety	README.md
+Aayushs-MBP: sem 7/ $ cd 'big data analytics'
+Aayushs-MBP: big data analytics/ $ ls
+Lab				README.md
+Materials			course policy - 2CS702.pdf
+Aayushs-MBP: big data analytics/ $ cd lab
+Aayushs-MBP: lab/ $ cd 'practical 3'
+Aayushs-MBP: practical 3/ $ ls
+README.md			WordCount.java
+WordCount$IntSumReducer.class	input
+WordCount$TokenizerMapper.class	snapshot.md
+WordCount.class			wc.jar
+Aayushs-MBP: practical 3/ $ hadoop com.sun.tools.javac.Main WordCount.java
+Aayushs-MBP: practical 3/ $ source ~/.bashrc
+Aayushs-MBP: practical 3/ $ hadoop com.sun.tools.javac.Main WordCount.java
+Aayushs-MBP: practical 3/ $ mkdir temp
+Aayushs-MBP: practical 3/ $ ls
+README.md			WordCount.class			snapshot.md
+WordCount$IntSumReducer.class	WordCount.java			temp
+WordCount$TokenizerMapper.class	input				wc.jar
+Aayushs-MBP: practical 3/ $ cd temp
+Aayushs-MBP: temp/ $ cp ../WordCount.java ./
+Aayushs-MBP: temp/ $ ls
+WordCount.java
+Aayushs-MBP: temp/ $ hadoop com.sun.tools.javac.Main WordCount.java
+Aayushs-MBP: temp/ $ cd ..
+Aayushs-MBP: .Trash/ $ ls
+ls: .: Operation not permitted
+Aayushs-MBP: .Trash/ $ cd '/Users/aayush/Documents/sem 7/Big Data Analytics/Lab/Practical 3/'
+Aayushs-MBP: Practical 3/ $ ls
+README.md			WordCount.class			snapshot.md
+WordCount$IntSumReducer.class	WordCount.java			wc.jar
+WordCount$TokenizerMapper.class	input
+Aayushs-MBP: Practical 3/ $ hadoop -fs ls
+ERROR: -fs is not COMMAND nor fully qualified CLASSNAME.
+Usage: hadoop [OPTIONS] SUBCOMMAND [SUBCOMMAND OPTIONS]
+ or    hadoop [OPTIONS] CLASSNAME [CLASSNAME OPTIONS]
+  where CLASSNAME is a user-provided Java class
+
+  OPTIONS is none or any of:
+
+--config dir                     Hadoop config directory
+--debug                          turn on shell script debug mode
+--help                           usage information
+buildpaths                       attempt to add class files from build tree
+hostnames list[,of,host,names]   hosts to use in slave mode
+hosts filename                   list of hosts to use in slave mode
+loglevel level                   set the log4j level for this command
+workers                          turn on worker mode
+
+  SUBCOMMAND is one of:
+
+
+    Admin Commands:
+
+daemonlog     get/set the log level for each daemon
+
+    Client Commands:
+
+archive       create a Hadoop archive
+checknative   check native Hadoop and compression libraries availability
+classpath     prints the class path needed to get the Hadoop jar and the required libraries
+conftest      validate configuration XML files
+credential    interact with credential providers
+distch        distributed metadata changer
+distcp        copy file or directories recursively
+dtutil        operations related to delegation tokens
+envvars       display computed Hadoop environment variables
+fs            run a generic filesystem user client
+gridmix       submit a mix of synthetic job, modeling a profiled from production load
+jar <jar>     run a jar file. NOTE: please use "yarn jar" to launch YARN applications, not this
+              command.
+jnipath       prints the java.library.path
+kdiag         Diagnose Kerberos Problems
+kerbname      show auth_to_local principal conversion
+key           manage keys via the KeyProvider
+rumenfolder   scale a rumen input trace
+rumentrace    convert logs into a rumen trace
+s3guard       manage metadata on S3
+trace         view and modify Hadoop tracing settings
+version       print the version
+
+    Daemon Commands:
+
+kms           run KMS, the Key Management Server
+registrydns   run the registry DNS server
+
+SUBCOMMAND may print help when invoked w/o parameters or with -h.
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls
+2022-10-07 11:56:29,865 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ls: `.': No such file or directory
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls /
+2022-10-07 11:56:40,810 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Aayushs-MBP: Practical 3/ $ hadoop fs -mkdir /prac3
+2022-10-07 11:57:10,832 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls /
+2022-10-07 11:57:14,926 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 1 items
+drwxr-xr-x   - aayush supergroup          0 2022-10-07 11:57 /prac3
+Aayushs-MBP: Practical 3/ $ jar cf wc.jar WordCount*.class
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls /
+2022-10-07 11:59:09,478 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 1 items
+drwxr-xr-x   - aayush supergroup          0 2022-10-07 11:57 /prac3
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls /prac3
+2022-10-07 12:00:22,967 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls /input/prac3
+2022-10-07 12:00:34,632 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ls: `/input/prac3': No such file or directory
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls /prac3/input
+2022-10-07 12:00:50,776 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ls: `/prac3/input': No such file or directory
+Aayushs-MBP: Practical 3/ $ hadoop fs -cd /prac3
+2022-10-07 12:01:15,086 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+-cd: Unknown command
+Usage: hadoop fs [generic options]
+	[-appendToFile <localsrc> ... <dst>]
+	[-cat [-ignoreCrc] <src> ...]
+	[-checksum [-v] <src> ...]
+	[-chgrp [-R] GROUP PATH...]
+	[-chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...]
+	[-chown [-R] [OWNER][:[GROUP]] PATH...]
+	[-concat <target path> <src path> <src path> ...]
+	[-copyFromLocal [-f] [-p] [-l] [-d] [-t <thread count>] [-q <thread pool queue size>] <localsrc> ... <dst>]
+	[-copyToLocal [-f] [-p] [-crc] [-ignoreCrc] [-t <thread count>] [-q <thread pool queue size>] <src> ... <localdst>]
+	[-count [-q] [-h] [-v] [-t [<storage type>]] [-u] [-x] [-e] [-s] <path> ...]
+	[-cp [-f] [-p | -p[topax]] [-d] [-t <thread count>] [-q <thread pool queue size>] <src> ... <dst>]
+	[-createSnapshot <snapshotDir> [<snapshotName>]]
+	[-deleteSnapshot <snapshotDir> <snapshotName>]
+	[-df [-h] [<path> ...]]
+	[-du [-s] [-h] [-v] [-x] <path> ...]
+	[-expunge [-immediate] [-fs <path>]]
+	[-find <path> ... <expression> ...]
+	[-get [-f] [-p] [-crc] [-ignoreCrc] [-t <thread count>] [-q <thread pool queue size>] <src> ... <localdst>]
+	[-getfacl [-R] <path>]
+	[-getfattr [-R] {-n name | -d} [-e en] <path>]
+	[-getmerge [-nl] [-skip-empty-file] <src> <localdst>]
+	[-head <file>]
+	[-help [cmd ...]]
+	[-ls [-C] [-d] [-h] [-q] [-R] [-t] [-S] [-r] [-u] [-e] [<path> ...]]
+	[-mkdir [-p] <path> ...]
+	[-moveFromLocal [-f] [-p] [-l] [-d] <localsrc> ... <dst>]
+	[-moveToLocal <src> <localdst>]
+	[-mv <src> ... <dst>]
+	[-put [-f] [-p] [-l] [-d] [-t <thread count>] [-q <thread pool queue size>] <localsrc> ... <dst>]
+	[-renameSnapshot <snapshotDir> <oldName> <newName>]
+	[-rm [-f] [-r|-R] [-skipTrash] [-safely] <src> ...]
+	[-rmdir [--ignore-fail-on-non-empty] <dir> ...]
+	[-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path>]|[--set <acl_spec> <path>]]
+	[-setfattr {-n name [-v value] | -x name} <path>]
+	[-setrep [-R] [-w] <rep> <path> ...]
+	[-stat [format] <path> ...]
+	[-tail [-f] [-s <sleep interval>] <file>]
+	[-test -[defswrz] <path>]
+	[-text [-ignoreCrc] <src> ...]
+	[-touch [-a] [-m] [-t TIMESTAMP (yyyyMMdd:HHmmss) ] [-c] <path> ...]
+	[-touchz <path> ...]
+	[-truncate [-w] <length> <path> ...]
+	[-usage [cmd ...]]
+
+Generic options supported are:
+-conf <configuration file>        specify an application configuration file
+-D <property=value>               define a value for a given property
+-fs <file:///|hdfs://namenode:port> specify default filesystem URL to use, overrides 'fs.defaultFS' property from configurations.
+-jt <local|resourcemanager:port>  specify a ResourceManager
+-files <file1,...>                specify a comma-separated list of files to be copied to the map reduce cluster
+-libjars <jar1,...>               specify a comma-separated list of jar files to be included in the classpath
+-archives <archive1,...>          specify a comma-separated list of archives to be unarchived on the compute machines
+
+The general command line syntax is:
+command [genericOptions] [commandOptions]
+
+Aayushs-MBP: Practical 3/ $ hadoop fs -pwd /
+2022-10-07 12:01:25,323 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+-pwd: Unknown command
+Usage: hadoop fs [generic options]
+	[-appendToFile <localsrc> ... <dst>]
+	[-cat [-ignoreCrc] <src> ...]
+	[-checksum [-v] <src> ...]
+	[-chgrp [-R] GROUP PATH...]
+	[-chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...]
+	[-chown [-R] [OWNER][:[GROUP]] PATH...]
+	[-concat <target path> <src path> <src path> ...]
+	[-copyFromLocal [-f] [-p] [-l] [-d] [-t <thread count>] [-q <thread pool queue size>] <localsrc> ... <dst>]
+	[-copyToLocal [-f] [-p] [-crc] [-ignoreCrc] [-t <thread count>] [-q <thread pool queue size>] <src> ... <localdst>]
+	[-count [-q] [-h] [-v] [-t [<storage type>]] [-u] [-x] [-e] [-s] <path> ...]
+	[-cp [-f] [-p | -p[topax]] [-d] [-t <thread count>] [-q <thread pool queue size>] <src> ... <dst>]
+	[-createSnapshot <snapshotDir> [<snapshotName>]]
+	[-deleteSnapshot <snapshotDir> <snapshotName>]
+	[-df [-h] [<path> ...]]
+	[-du [-s] [-h] [-v] [-x] <path> ...]
+	[-expunge [-immediate] [-fs <path>]]
+	[-find <path> ... <expression> ...]
+	[-get [-f] [-p] [-crc] [-ignoreCrc] [-t <thread count>] [-q <thread pool queue size>] <src> ... <localdst>]
+	[-getfacl [-R] <path>]
+	[-getfattr [-R] {-n name | -d} [-e en] <path>]
+	[-getmerge [-nl] [-skip-empty-file] <src> <localdst>]
+	[-head <file>]
+	[-help [cmd ...]]
+	[-ls [-C] [-d] [-h] [-q] [-R] [-t] [-S] [-r] [-u] [-e] [<path> ...]]
+	[-mkdir [-p] <path> ...]
+	[-moveFromLocal [-f] [-p] [-l] [-d] <localsrc> ... <dst>]
+	[-moveToLocal <src> <localdst>]
+	[-mv <src> ... <dst>]
+	[-put [-f] [-p] [-l] [-d] [-t <thread count>] [-q <thread pool queue size>] <localsrc> ... <dst>]
+	[-renameSnapshot <snapshotDir> <oldName> <newName>]
+	[-rm [-f] [-r|-R] [-skipTrash] [-safely] <src> ...]
+	[-rmdir [--ignore-fail-on-non-empty] <dir> ...]
+	[-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path>]|[--set <acl_spec> <path>]]
+	[-setfattr {-n name [-v value] | -x name} <path>]
+	[-setrep [-R] [-w] <rep> <path> ...]
+	[-stat [format] <path> ...]
+	[-tail [-f] [-s <sleep interval>] <file>]
+	[-test -[defswrz] <path>]
+	[-text [-ignoreCrc] <src> ...]
+	[-touch [-a] [-m] [-t TIMESTAMP (yyyyMMdd:HHmmss) ] [-c] <path> ...]
+	[-touchz <path> ...]
+	[-truncate [-w] <length> <path> ...]
+	[-usage [cmd ...]]
+
+Generic options supported are:
+-conf <configuration file>        specify an application configuration file
+-D <property=value>               define a value for a given property
+-fs <file:///|hdfs://namenode:port> specify default filesystem URL to use, overrides 'fs.defaultFS' property from configurations.
+-jt <local|resourcemanager:port>  specify a ResourceManager
+-files <file1,...>                specify a comma-separated list of files to be copied to the map reduce cluster
+-libjars <jar1,...>               specify a comma-separated list of jar files to be included in the classpath
+-archives <archive1,...>          specify a comma-separated list of archives to be unarchived on the compute machines
+
+The general command line syntax is:
+command [genericOptions] [commandOptions]
+
+Aayushs-MBP: Practical 3/ $ hadoop fs -pwd 
+2022-10-07 12:01:28,724 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+-pwd: Unknown command
+Usage: hadoop fs [generic options]
+	[-appendToFile <localsrc> ... <dst>]
+	[-cat [-ignoreCrc] <src> ...]
+	[-checksum [-v] <src> ...]
+	[-chgrp [-R] GROUP PATH...]
+	[-chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...]
+	[-chown [-R] [OWNER][:[GROUP]] PATH...]
+	[-concat <target path> <src path> <src path> ...]
+	[-copyFromLocal [-f] [-p] [-l] [-d] [-t <thread count>] [-q <thread pool queue size>] <localsrc> ... <dst>]
+	[-copyToLocal [-f] [-p] [-crc] [-ignoreCrc] [-t <thread count>] [-q <thread pool queue size>] <src> ... <localdst>]
+	[-count [-q] [-h] [-v] [-t [<storage type>]] [-u] [-x] [-e] [-s] <path> ...]
+	[-cp [-f] [-p | -p[topax]] [-d] [-t <thread count>] [-q <thread pool queue size>] <src> ... <dst>]
+	[-createSnapshot <snapshotDir> [<snapshotName>]]
+	[-deleteSnapshot <snapshotDir> <snapshotName>]
+	[-df [-h] [<path> ...]]
+	[-du [-s] [-h] [-v] [-x] <path> ...]
+	[-expunge [-immediate] [-fs <path>]]
+	[-find <path> ... <expression> ...]
+	[-get [-f] [-p] [-crc] [-ignoreCrc] [-t <thread count>] [-q <thread pool queue size>] <src> ... <localdst>]
+	[-getfacl [-R] <path>]
+	[-getfattr [-R] {-n name | -d} [-e en] <path>]
+	[-getmerge [-nl] [-skip-empty-file] <src> <localdst>]
+	[-head <file>]
+	[-help [cmd ...]]
+	[-ls [-C] [-d] [-h] [-q] [-R] [-t] [-S] [-r] [-u] [-e] [<path> ...]]
+	[-mkdir [-p] <path> ...]
+	[-moveFromLocal [-f] [-p] [-l] [-d] <localsrc> ... <dst>]
+	[-moveToLocal <src> <localdst>]
+	[-mv <src> ... <dst>]
+	[-put [-f] [-p] [-l] [-d] [-t <thread count>] [-q <thread pool queue size>] <localsrc> ... <dst>]
+	[-renameSnapshot <snapshotDir> <oldName> <newName>]
+	[-rm [-f] [-r|-R] [-skipTrash] [-safely] <src> ...]
+	[-rmdir [--ignore-fail-on-non-empty] <dir> ...]
+	[-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path>]|[--set <acl_spec> <path>]]
+	[-setfattr {-n name [-v value] | -x name} <path>]
+	[-setrep [-R] [-w] <rep> <path> ...]
+	[-stat [format] <path> ...]
+	[-tail [-f] [-s <sleep interval>] <file>]
+	[-test -[defswrz] <path>]
+	[-text [-ignoreCrc] <src> ...]
+	[-touch [-a] [-m] [-t TIMESTAMP (yyyyMMdd:HHmmss) ] [-c] <path> ...]
+	[-touchz <path> ...]
+	[-truncate [-w] <length> <path> ...]
+	[-usage [cmd ...]]
+
+Generic options supported are:
+-conf <configuration file>        specify an application configuration file
+-D <property=value>               define a value for a given property
+-fs <file:///|hdfs://namenode:port> specify default filesystem URL to use, overrides 'fs.defaultFS' property from configurations.
+-jt <local|resourcemanager:port>  specify a ResourceManager
+-files <file1,...>                specify a comma-separated list of files to be copied to the map reduce cluster
+-libjars <jar1,...>               specify a comma-separated list of jar files to be included in the classpath
+-archives <archive1,...>          specify a comma-separated list of archives to be unarchived on the compute machines
+
+The general command line syntax is:
+command [genericOptions] [commandOptions]
+
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls /
+2022-10-07 12:02:05,867 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 1 items
+drwxr-xr-x   - aayush supergroup          0 2022-10-07 11:57 /prac3
+Aayushs-MBP: Practical 3/ $ hadoop fs -cd /prac3
+2022-10-07 12:02:18,147 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+-cd: Unknown command
+Usage: hadoop fs [generic options]
+	[-appendToFile <localsrc> ... <dst>]
+	[-cat [-ignoreCrc] <src> ...]
+	[-checksum [-v] <src> ...]
+	[-chgrp [-R] GROUP PATH...]
+	[-chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...]
+	[-chown [-R] [OWNER][:[GROUP]] PATH...]
+	[-concat <target path> <src path> <src path> ...]
+	[-copyFromLocal [-f] [-p] [-l] [-d] [-t <thread count>] [-q <thread pool queue size>] <localsrc> ... <dst>]
+	[-copyToLocal [-f] [-p] [-crc] [-ignoreCrc] [-t <thread count>] [-q <thread pool queue size>] <src> ... <localdst>]
+	[-count [-q] [-h] [-v] [-t [<storage type>]] [-u] [-x] [-e] [-s] <path> ...]
+	[-cp [-f] [-p | -p[topax]] [-d] [-t <thread count>] [-q <thread pool queue size>] <src> ... <dst>]
+	[-createSnapshot <snapshotDir> [<snapshotName>]]
+	[-deleteSnapshot <snapshotDir> <snapshotName>]
+	[-df [-h] [<path> ...]]
+	[-du [-s] [-h] [-v] [-x] <path> ...]
+	[-expunge [-immediate] [-fs <path>]]
+	[-find <path> ... <expression> ...]
+	[-get [-f] [-p] [-crc] [-ignoreCrc] [-t <thread count>] [-q <thread pool queue size>] <src> ... <localdst>]
+	[-getfacl [-R] <path>]
+	[-getfattr [-R] {-n name | -d} [-e en] <path>]
+	[-getmerge [-nl] [-skip-empty-file] <src> <localdst>]
+	[-head <file>]
+	[-help [cmd ...]]
+	[-ls [-C] [-d] [-h] [-q] [-R] [-t] [-S] [-r] [-u] [-e] [<path> ...]]
+	[-mkdir [-p] <path> ...]
+	[-moveFromLocal [-f] [-p] [-l] [-d] <localsrc> ... <dst>]
+	[-moveToLocal <src> <localdst>]
+	[-mv <src> ... <dst>]
+	[-put [-f] [-p] [-l] [-d] [-t <thread count>] [-q <thread pool queue size>] <localsrc> ... <dst>]
+	[-renameSnapshot <snapshotDir> <oldName> <newName>]
+	[-rm [-f] [-r|-R] [-skipTrash] [-safely] <src> ...]
+	[-rmdir [--ignore-fail-on-non-empty] <dir> ...]
+	[-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path>]|[--set <acl_spec> <path>]]
+	[-setfattr {-n name [-v value] | -x name} <path>]
+	[-setrep [-R] [-w] <rep> <path> ...]
+	[-stat [format] <path> ...]
+	[-tail [-f] [-s <sleep interval>] <file>]
+	[-test -[defswrz] <path>]
+	[-text [-ignoreCrc] <src> ...]
+	[-touch [-a] [-m] [-t TIMESTAMP (yyyyMMdd:HHmmss) ] [-c] <path> ...]
+	[-touchz <path> ...]
+	[-truncate [-w] <length> <path> ...]
+	[-usage [cmd ...]]
+
+Generic options supported are:
+-conf <configuration file>        specify an application configuration file
+-D <property=value>               define a value for a given property
+-fs <file:///|hdfs://namenode:port> specify default filesystem URL to use, overrides 'fs.defaultFS' property from configurations.
+-jt <local|resourcemanager:port>  specify a ResourceManager
+-files <file1,...>                specify a comma-separated list of files to be copied to the map reduce cluster
+-libjars <jar1,...>               specify a comma-separated list of jar files to be included in the classpath
+-archives <archive1,...>          specify a comma-separated list of archives to be unarchived on the compute machines
+
+The general command line syntax is:
+command [genericOptions] [commandOptions]
+
+Aayushs-MBP: Practical 3/ $ hadoop fs -cd /prac3/
+2022-10-07 12:02:22,614 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+-cd: Unknown command
+Usage: hadoop fs [generic options]
+	[-appendToFile <localsrc> ... <dst>]
+	[-cat [-ignoreCrc] <src> ...]
+	[-checksum [-v] <src> ...]
+	[-chgrp [-R] GROUP PATH...]
+	[-chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...]
+	[-chown [-R] [OWNER][:[GROUP]] PATH...]
+	[-concat <target path> <src path> <src path> ...]
+	[-copyFromLocal [-f] [-p] [-l] [-d] [-t <thread count>] [-q <thread pool queue size>] <localsrc> ... <dst>]
+	[-copyToLocal [-f] [-p] [-crc] [-ignoreCrc] [-t <thread count>] [-q <thread pool queue size>] <src> ... <localdst>]
+	[-count [-q] [-h] [-v] [-t [<storage type>]] [-u] [-x] [-e] [-s] <path> ...]
+	[-cp [-f] [-p | -p[topax]] [-d] [-t <thread count>] [-q <thread pool queue size>] <src> ... <dst>]
+	[-createSnapshot <snapshotDir> [<snapshotName>]]
+	[-deleteSnapshot <snapshotDir> <snapshotName>]
+	[-df [-h] [<path> ...]]
+	[-du [-s] [-h] [-v] [-x] <path> ...]
+	[-expunge [-immediate] [-fs <path>]]
+	[-find <path> ... <expression> ...]
+	[-get [-f] [-p] [-crc] [-ignoreCrc] [-t <thread count>] [-q <thread pool queue size>] <src> ... <localdst>]
+	[-getfacl [-R] <path>]
+	[-getfattr [-R] {-n name | -d} [-e en] <path>]
+	[-getmerge [-nl] [-skip-empty-file] <src> <localdst>]
+	[-head <file>]
+	[-help [cmd ...]]
+	[-ls [-C] [-d] [-h] [-q] [-R] [-t] [-S] [-r] [-u] [-e] [<path> ...]]
+	[-mkdir [-p] <path> ...]
+	[-moveFromLocal [-f] [-p] [-l] [-d] <localsrc> ... <dst>]
+	[-moveToLocal <src> <localdst>]
+	[-mv <src> ... <dst>]
+	[-put [-f] [-p] [-l] [-d] [-t <thread count>] [-q <thread pool queue size>] <localsrc> ... <dst>]
+	[-renameSnapshot <snapshotDir> <oldName> <newName>]
+	[-rm [-f] [-r|-R] [-skipTrash] [-safely] <src> ...]
+	[-rmdir [--ignore-fail-on-non-empty] <dir> ...]
+	[-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path>]|[--set <acl_spec> <path>]]
+	[-setfattr {-n name [-v value] | -x name} <path>]
+	[-setrep [-R] [-w] <rep> <path> ...]
+	[-stat [format] <path> ...]
+	[-tail [-f] [-s <sleep interval>] <file>]
+	[-test -[defswrz] <path>]
+	[-text [-ignoreCrc] <src> ...]
+	[-touch [-a] [-m] [-t TIMESTAMP (yyyyMMdd:HHmmss) ] [-c] <path> ...]
+	[-touchz <path> ...]
+	[-truncate [-w] <length> <path> ...]
+	[-usage [cmd ...]]
+
+Generic options supported are:
+-conf <configuration file>        specify an application configuration file
+-D <property=value>               define a value for a given property
+-fs <file:///|hdfs://namenode:port> specify default filesystem URL to use, overrides 'fs.defaultFS' property from configurations.
+-jt <local|resourcemanager:port>  specify a ResourceManager
+-files <file1,...>                specify a comma-separated list of files to be copied to the map reduce cluster
+-libjars <jar1,...>               specify a comma-separated list of jar files to be included in the classpath
+-archives <archive1,...>          specify a comma-separated list of archives to be unarchived on the compute machines
+
+The general command line syntax is:
+command [genericOptions] [commandOptions]
+
+Aayushs-MBP: Practical 3/ $ hadoop fs -pwd /
+2022-10-07 12:02:41,850 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+-pwd: Unknown command
+Usage: hadoop fs [generic options]
+	[-appendToFile <localsrc> ... <dst>]
+	[-cat [-ignoreCrc] <src> ...]
+	[-checksum [-v] <src> ...]
+	[-chgrp [-R] GROUP PATH...]
+	[-chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...]
+	[-chown [-R] [OWNER][:[GROUP]] PATH...]
+	[-concat <target path> <src path> <src path> ...]
+	[-copyFromLocal [-f] [-p] [-l] [-d] [-t <thread count>] [-q <thread pool queue size>] <localsrc> ... <dst>]
+	[-copyToLocal [-f] [-p] [-crc] [-ignoreCrc] [-t <thread count>] [-q <thread pool queue size>] <src> ... <localdst>]
+	[-count [-q] [-h] [-v] [-t [<storage type>]] [-u] [-x] [-e] [-s] <path> ...]
+	[-cp [-f] [-p | -p[topax]] [-d] [-t <thread count>] [-q <thread pool queue size>] <src> ... <dst>]
+	[-createSnapshot <snapshotDir> [<snapshotName>]]
+	[-deleteSnapshot <snapshotDir> <snapshotName>]
+	[-df [-h] [<path> ...]]
+	[-du [-s] [-h] [-v] [-x] <path> ...]
+	[-expunge [-immediate] [-fs <path>]]
+	[-find <path> ... <expression> ...]
+	[-get [-f] [-p] [-crc] [-ignoreCrc] [-t <thread count>] [-q <thread pool queue size>] <src> ... <localdst>]
+	[-getfacl [-R] <path>]
+	[-getfattr [-R] {-n name | -d} [-e en] <path>]
+	[-getmerge [-nl] [-skip-empty-file] <src> <localdst>]
+	[-head <file>]
+	[-help [cmd ...]]
+	[-ls [-C] [-d] [-h] [-q] [-R] [-t] [-S] [-r] [-u] [-e] [<path> ...]]
+	[-mkdir [-p] <path> ...]
+	[-moveFromLocal [-f] [-p] [-l] [-d] <localsrc> ... <dst>]
+	[-moveToLocal <src> <localdst>]
+	[-mv <src> ... <dst>]
+	[-put [-f] [-p] [-l] [-d] [-t <thread count>] [-q <thread pool queue size>] <localsrc> ... <dst>]
+	[-renameSnapshot <snapshotDir> <oldName> <newName>]
+	[-rm [-f] [-r|-R] [-skipTrash] [-safely] <src> ...]
+	[-rmdir [--ignore-fail-on-non-empty] <dir> ...]
+	[-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path>]|[--set <acl_spec> <path>]]
+	[-setfattr {-n name [-v value] | -x name} <path>]
+	[-setrep [-R] [-w] <rep> <path> ...]
+	[-stat [format] <path> ...]
+	[-tail [-f] [-s <sleep interval>] <file>]
+	[-test -[defswrz] <path>]
+	[-text [-ignoreCrc] <src> ...]
+	[-touch [-a] [-m] [-t TIMESTAMP (yyyyMMdd:HHmmss) ] [-c] <path> ...]
+	[-touchz <path> ...]
+	[-truncate [-w] <length> <path> ...]
+	[-usage [cmd ...]]
+
+Generic options supported are:
+-conf <configuration file>        specify an application configuration file
+-D <property=value>               define a value for a given property
+-fs <file:///|hdfs://namenode:port> specify default filesystem URL to use, overrides 'fs.defaultFS' property from configurations.
+-jt <local|resourcemanager:port>  specify a ResourceManager
+-files <file1,...>                specify a comma-separated list of files to be copied to the map reduce cluster
+-libjars <jar1,...>               specify a comma-separated list of jar files to be included in the classpath
+-archives <archive1,...>          specify a comma-separated list of archives to be unarchived on the compute machines
+
+The general command line syntax is:
+command [genericOptions] [commandOptions]
+
+Aayushs-MBP: Practical 3/ $ hadoop fs -put /input /prac3
+2022-10-07 12:03:43,456 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+put: `/input': No such file or directory
+Aayushs-MBP: Practical 3/ $ hadoop fs -put input /prac3
+2022-10-07 12:03:51,133 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls /prac3
+2022-10-07 12:04:03,067 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 1 items
+drwxr-xr-x   - aayush supergroup          0 2022-10-07 12:03 /prac3/input
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls /input/prac3
+2022-10-07 12:04:11,316 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ls: `/input/prac3': No such file or directory
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls input/prac3
+2022-10-07 12:04:26,990 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ls: `input/prac3': No such file or directory
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls prac3/input/
+2022-10-07 12:04:40,816 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+ls: `prac3/input/': No such file or directory
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls /prac3/input
+2022-10-07 12:04:53,523 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 2 items
+-rw-r--r--   1 aayush supergroup       6148 2022-10-07 12:03 /prac3/input/.DS_Store
+-rw-r--r--   1 aayush supergroup        402 2022-10-07 12:03 /prac3/input/dog.txt
+Aayushs-MBP: Practical 3/ $ hadoop fs -rm .DS_Store
+2022-10-07 12:05:43,727 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+rm: `.DS_Store': No such file or directory
+Aayushs-MBP: Practical 3/ $ hadoop fs -rm /prac3/input/.DS_Store
+2022-10-07 12:05:56,007 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Deleted /prac3/input/.DS_Store
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls /prac3/input
+2022-10-07 12:06:02,939 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 1 items
+-rw-r--r--   1 aayush supergroup        402 2022-10-07 12:03 /prac3/input/dog.txt
+Aayushs-MBP: Practical 3/ $ hadoop fs -rm /prac3/input/dog.txt
+2022-10-07 12:06:42,143 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Deleted /prac3/input/dog.txt
+Aayushs-MBP: Practical 3/ $ ls
+README.md			WordCount$TokenizerMapper.class	input
+README.md.tmp.html		WordCount.class			snapshot.md
+WordCount$IntSumReducer.class	WordCount.java			wc.jar
+Aayushs-MBP: Practical 3/ $ cd input
+Aayushs-MBP: input/ $ ls
+dog.txt
+Aayushs-MBP: input/ $ rm dog.txt
+Aayushs-MBP: input/ $ ls
+Aayushs-MBP: input/ $ cat > file01.txt
+Hello World Bye World
+Aayushs-MBP: input/ $ cat > file02.txt
+Hello Hadoop Goodbye Hadoop from aayush
+Aayushs-MBP: input/ $ cat < file01.txt
+Hello World Bye World
+Aayushs-MBP: input/ $ cat < file02.txt
+Hello Hadoop Goodbye Hadoop from aayush
+Aayushs-MBP: input/ $ hadoop fs -ls /
+2022-10-07 12:12:27,135 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 1 items
+drwxr-xr-x   - aayush supergroup          0 2022-10-07 12:03 /prac3
+Aayushs-MBP: input/ $ hadoop fs -ls /prac3
+2022-10-07 12:12:32,387 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 1 items
+drwxr-xr-x   - aayush supergroup          0 2022-10-07 12:06 /prac3/input
+Aayushs-MBP: input/ $ hadoop fs -ls /prac3/input
+2022-10-07 12:12:40,190 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Aayushs-MBP: input/ $ hadoop fs -put /prac3/input/file01.txt
+2022-10-07 12:12:55,369 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+put: `.': No such file or directory: `hdfs://localhost:9000/user/aayush'
+Aayushs-MBP: input/ $ hadoop fs -put file01.txt /prac3/input
+2022-10-07 12:13:27,528 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Aayushs-MBP: input/ $ hadoop fs -put file02.txt /prac3/input
+2022-10-07 12:13:35,687 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Aayushs-MBP: input/ $ hadoop fs -ls /prac3/input
+2022-10-07 12:13:40,996 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 2 items
+-rw-r--r--   1 aayush supergroup         22 2022-10-07 12:13 /prac3/input/file01.txt
+-rw-r--r--   1 aayush supergroup         40 2022-10-07 12:13 /prac3/input/file02.txt
+Aayushs-MBP: input/ $ hadoop jar wc.jar WordCount prac3/input prac3/output
+JAR does not exist or is not a normal file: /Users/aayush/Documents/sem 7/Big Data Analytics/Lab/Practical 3/input/wc.jar
+Aayushs-MBP: input/ $ cd ..
+Aayushs-MBP: Practical 3/ $ ls
+README.md			WordCount$TokenizerMapper.class	input
+README.md.tmp.html		WordCount.class			snapshot.md
+WordCount$IntSumReducer.class	WordCount.java			wc.jar
+Aayushs-MBP: Practical 3/ $ hadoop jar wc.jar WordCount prac3/input prac3/output
+2022-10-07 12:16:19,362 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-10-07 12:16:19,898 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-10-07 12:16:20,410 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2022-10-07 12:16:20,422 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/aayush/.staging/job_1665122688341_0001
+2022-10-07 12:16:20,624 INFO mapreduce.JobSubmitter: Cleaning up the staging area /tmp/hadoop-yarn/staging/aayush/.staging/job_1665122688341_0001
+Exception in thread "main" org.apache.hadoop.mapreduce.lib.input.InvalidInputException: Input path does not exist: hdfs://localhost:9000/user/aayush/prac3/input
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:340)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.listStatus(FileInputFormat.java:279)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.getSplits(FileInputFormat.java:404)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeNewSplits(JobSubmitter.java:310)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeSplits(JobSubmitter.java:327)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:200)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1571)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1568)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1568)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1589)
+	at WordCount.main(WordCount.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:323)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:236)
+Caused by: java.io.IOException: Input path does not exist: hdfs://localhost:9000/user/aayush/prac3/input
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:313)
+	... 19 more
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls /prac3/input
+2022-10-07 12:20:57,362 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 2 items
+-rw-r--r--   1 aayush supergroup         22 2022-10-07 12:13 /prac3/input/file01.txt
+-rw-r--r--   1 aayush supergroup         40 2022-10-07 12:13 /prac3/input/file02.txt
+Aayushs-MBP: Practical 3/ $ hadoop jar wc.jar WordCount prac3/input/file01.txt prac3/output
+2022-10-07 12:21:09,193 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-10-07 12:21:09,750 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-10-07 12:21:10,220 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2022-10-07 12:21:10,234 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/aayush/.staging/job_1665122688341_0002
+2022-10-07 12:21:10,459 INFO mapreduce.JobSubmitter: Cleaning up the staging area /tmp/hadoop-yarn/staging/aayush/.staging/job_1665122688341_0002
+Exception in thread "main" org.apache.hadoop.mapreduce.lib.input.InvalidInputException: Input path does not exist: hdfs://localhost:9000/user/aayush/prac3/input/file01.txt
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:340)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.listStatus(FileInputFormat.java:279)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.getSplits(FileInputFormat.java:404)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeNewSplits(JobSubmitter.java:310)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeSplits(JobSubmitter.java:327)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:200)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1571)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1568)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1568)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1589)
+	at WordCount.main(WordCount.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:323)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:236)
+Caused by: java.io.IOException: Input path does not exist: hdfs://localhost:9000/user/aayush/prac3/input/file01.txt
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:313)
+	... 19 more
+Aayushs-MBP: Practical 3/ $ hadoop jar wc.jar WordCount prac3/input/file01.txt prac3/output
+2022-10-07 12:22:34,005 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-10-07 12:22:34,566 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-10-07 12:22:34,877 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2022-10-07 12:22:34,893 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/aayush/.staging/job_1665122688341_0003
+2022-10-07 12:22:35,074 INFO mapreduce.JobSubmitter: Cleaning up the staging area /tmp/hadoop-yarn/staging/aayush/.staging/job_1665122688341_0003
+Exception in thread "main" org.apache.hadoop.mapreduce.lib.input.InvalidInputException: Input path does not exist: hdfs://localhost:9000/user/aayush/prac3/input/file01.txt
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:340)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.listStatus(FileInputFormat.java:279)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.getSplits(FileInputFormat.java:404)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeNewSplits(JobSubmitter.java:310)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeSplits(JobSubmitter.java:327)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:200)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1571)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1568)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1568)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1589)
+	at WordCount.main(WordCount.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:323)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:236)
+Caused by: java.io.IOException: Input path does not exist: hdfs://localhost:9000/user/aayush/prac3/input/file01.txt
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:313)
+	... 19 more
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls /prac3/input
+2022-10-07 12:23:09,612 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 2 items
+-rw-r--r--   1 aayush supergroup         22 2022-10-07 12:13 /prac3/input/file01.txt
+-rw-r--r--   1 aayush supergroup         40 2022-10-07 12:13 /prac3/input/file02.txt
+Aayushs-MBP: Practical 3/ $ hadoop fs -pwd 
+2022-10-07 12:23:28,020 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+-pwd: Unknown command
+Usage: hadoop fs [generic options]
+	[-appendToFile <localsrc> ... <dst>]
+	[-cat [-ignoreCrc] <src> ...]
+	[-checksum [-v] <src> ...]
+	[-chgrp [-R] GROUP PATH...]
+	[-chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...]
+	[-chown [-R] [OWNER][:[GROUP]] PATH...]
+	[-concat <target path> <src path> <src path> ...]
+	[-copyFromLocal [-f] [-p] [-l] [-d] [-t <thread count>] [-q <thread pool queue size>] <localsrc> ... <dst>]
+	[-copyToLocal [-f] [-p] [-crc] [-ignoreCrc] [-t <thread count>] [-q <thread pool queue size>] <src> ... <localdst>]
+	[-count [-q] [-h] [-v] [-t [<storage type>]] [-u] [-x] [-e] [-s] <path> ...]
+	[-cp [-f] [-p | -p[topax]] [-d] [-t <thread count>] [-q <thread pool queue size>] <src> ... <dst>]
+	[-createSnapshot <snapshotDir> [<snapshotName>]]
+	[-deleteSnapshot <snapshotDir> <snapshotName>]
+	[-df [-h] [<path> ...]]
+	[-du [-s] [-h] [-v] [-x] <path> ...]
+	[-expunge [-immediate] [-fs <path>]]
+	[-find <path> ... <expression> ...]
+	[-get [-f] [-p] [-crc] [-ignoreCrc] [-t <thread count>] [-q <thread pool queue size>] <src> ... <localdst>]
+	[-getfacl [-R] <path>]
+	[-getfattr [-R] {-n name | -d} [-e en] <path>]
+	[-getmerge [-nl] [-skip-empty-file] <src> <localdst>]
+	[-head <file>]
+	[-help [cmd ...]]
+	[-ls [-C] [-d] [-h] [-q] [-R] [-t] [-S] [-r] [-u] [-e] [<path> ...]]
+	[-mkdir [-p] <path> ...]
+	[-moveFromLocal [-f] [-p] [-l] [-d] <localsrc> ... <dst>]
+	[-moveToLocal <src> <localdst>]
+	[-mv <src> ... <dst>]
+	[-put [-f] [-p] [-l] [-d] [-t <thread count>] [-q <thread pool queue size>] <localsrc> ... <dst>]
+	[-renameSnapshot <snapshotDir> <oldName> <newName>]
+	[-rm [-f] [-r|-R] [-skipTrash] [-safely] <src> ...]
+	[-rmdir [--ignore-fail-on-non-empty] <dir> ...]
+	[-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path>]|[--set <acl_spec> <path>]]
+	[-setfattr {-n name [-v value] | -x name} <path>]
+	[-setrep [-R] [-w] <rep> <path> ...]
+	[-stat [format] <path> ...]
+	[-tail [-f] [-s <sleep interval>] <file>]
+	[-test -[defswrz] <path>]
+	[-text [-ignoreCrc] <src> ...]
+	[-touch [-a] [-m] [-t TIMESTAMP (yyyyMMdd:HHmmss) ] [-c] <path> ...]
+	[-touchz <path> ...]
+	[-truncate [-w] <length> <path> ...]
+	[-usage [cmd ...]]
+
+Generic options supported are:
+-conf <configuration file>        specify an application configuration file
+-D <property=value>               define a value for a given property
+-fs <file:///|hdfs://namenode:port> specify default filesystem URL to use, overrides 'fs.defaultFS' property from configurations.
+-jt <local|resourcemanager:port>  specify a ResourceManager
+-files <file1,...>                specify a comma-separated list of files to be copied to the map reduce cluster
+-libjars <jar1,...>               specify a comma-separated list of jar files to be included in the classpath
+-archives <archive1,...>          specify a comma-separated list of archives to be unarchived on the compute machines
+
+The general command line syntax is:
+command [genericOptions] [commandOptions]
+
+Aayushs-MBP: Practical 3/ $ pwd
+/Users/aayush/Documents/sem 7/Big Data Analytics/Lab/Practical 3
+Aayushs-MBP: Practical 3/ $ hadoop jar wc.jar WordCount /user/aayush/prac3/input/file01.txt prac3/output
+2022-10-07 12:26:29,769 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-10-07 12:26:30,310 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-10-07 12:26:30,801 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2022-10-07 12:26:30,815 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/aayush/.staging/job_1665122688341_0004
+2022-10-07 12:26:31,000 INFO mapreduce.JobSubmitter: Cleaning up the staging area /tmp/hadoop-yarn/staging/aayush/.staging/job_1665122688341_0004
+Exception in thread "main" org.apache.hadoop.mapreduce.lib.input.InvalidInputException: Input path does not exist: hdfs://localhost:9000/user/aayush/prac3/input/file01.txt
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:340)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.listStatus(FileInputFormat.java:279)
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.getSplits(FileInputFormat.java:404)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeNewSplits(JobSubmitter.java:310)
+	at org.apache.hadoop.mapreduce.JobSubmitter.writeSplits(JobSubmitter.java:327)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:200)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1571)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1568)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1568)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1589)
+	at WordCount.main(WordCount.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:323)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:236)
+Caused by: java.io.IOException: Input path does not exist: hdfs://localhost:9000/user/aayush/prac3/input/file01.txt
+	at org.apache.hadoop.mapreduce.lib.input.FileInputFormat.singleThreadedListStatus(FileInputFormat.java:313)
+	... 19 more
+Aayushs-MBP: Practical 3/ $ hadoop fs -cat sample1.txt
+2022-10-07 12:27:10,522 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+cat: `sample1.txt': No such file or directory
+Aayushs-MBP: Practical 3/ $ hadoop fs -mkdir /first
+2022-10-07 12:27:26,326 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Aayushs-MBP: Practical 3/ $ hadoop fs -cat > sample1.txt
+2022-10-07 12:27:47,863 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+-cat: Not enough arguments: expected 1 but got 0
+Usage: hadoop fs [generic options]
+	[-appendToFile <localsrc> ... <dst>]
+	[-cat [-ignoreCrc] <src> ...]
+	[-checksum [-v] <src> ...]
+	[-chgrp [-R] GROUP PATH...]
+	[-chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...]
+	[-chown [-R] [OWNER][:[GROUP]] PATH...]
+	[-concat <target path> <src path> <src path> ...]
+	[-copyFromLocal [-f] [-p] [-l] [-d] [-t <thread count>] [-q <thread pool queue size>] <localsrc> ... <dst>]
+	[-copyToLocal [-f] [-p] [-crc] [-ignoreCrc] [-t <thread count>] [-q <thread pool queue size>] <src> ... <localdst>]
+	[-count [-q] [-h] [-v] [-t [<storage type>]] [-u] [-x] [-e] [-s] <path> ...]
+	[-cp [-f] [-p | -p[topax]] [-d] [-t <thread count>] [-q <thread pool queue size>] <src> ... <dst>]
+	[-createSnapshot <snapshotDir> [<snapshotName>]]
+	[-deleteSnapshot <snapshotDir> <snapshotName>]
+	[-df [-h] [<path> ...]]
+	[-du [-s] [-h] [-v] [-x] <path> ...]
+	[-expunge [-immediate] [-fs <path>]]
+	[-find <path> ... <expression> ...]
+	[-get [-f] [-p] [-crc] [-ignoreCrc] [-t <thread count>] [-q <thread pool queue size>] <src> ... <localdst>]
+	[-getfacl [-R] <path>]
+	[-getfattr [-R] {-n name | -d} [-e en] <path>]
+	[-getmerge [-nl] [-skip-empty-file] <src> <localdst>]
+	[-head <file>]
+	[-help [cmd ...]]
+	[-ls [-C] [-d] [-h] [-q] [-R] [-t] [-S] [-r] [-u] [-e] [<path> ...]]
+	[-mkdir [-p] <path> ...]
+	[-moveFromLocal [-f] [-p] [-l] [-d] <localsrc> ... <dst>]
+	[-moveToLocal <src> <localdst>]
+	[-mv <src> ... <dst>]
+	[-put [-f] [-p] [-l] [-d] [-t <thread count>] [-q <thread pool queue size>] <localsrc> ... <dst>]
+	[-renameSnapshot <snapshotDir> <oldName> <newName>]
+	[-rm [-f] [-r|-R] [-skipTrash] [-safely] <src> ...]
+	[-rmdir [--ignore-fail-on-non-empty] <dir> ...]
+	[-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path>]|[--set <acl_spec> <path>]]
+	[-setfattr {-n name [-v value] | -x name} <path>]
+	[-setrep [-R] [-w] <rep> <path> ...]
+	[-stat [format] <path> ...]
+	[-tail [-f] [-s <sleep interval>] <file>]
+	[-test -[defswrz] <path>]
+	[-text [-ignoreCrc] <src> ...]
+	[-touch [-a] [-m] [-t TIMESTAMP (yyyyMMdd:HHmmss) ] [-c] <path> ...]
+	[-touchz <path> ...]
+	[-truncate [-w] <length> <path> ...]
+	[-usage [cmd ...]]
+
+Generic options supported are:
+-conf <configuration file>        specify an application configuration file
+-D <property=value>               define a value for a given property
+-fs <file:///|hdfs://namenode:port> specify default filesystem URL to use, overrides 'fs.defaultFS' property from configurations.
+-jt <local|resourcemanager:port>  specify a ResourceManager
+-files <file1,...>                specify a comma-separated list of files to be copied to the map reduce cluster
+-libjars <jar1,...>               specify a comma-separated list of jar files to be included in the classpath
+-archives <archive1,...>          specify a comma-separated list of archives to be unarchived on the compute machines
+
+The general command line syntax is:
+command [genericOptions] [commandOptions]
+
+Usage: hadoop fs [generic options] -cat [-ignoreCrc] <src> ...
+Aayushs-MBP: Practical 3/ $ hadoop fs -cat >
+-bash: syntax error near unexpected token `newline'
+Aayushs-MBP: Practical 3/ $ hadoop fs -cat
+2022-10-07 12:28:04,742 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+-cat: Not enough arguments: expected 1 but got 0
+Usage: hadoop fs [generic options]
+	[-appendToFile <localsrc> ... <dst>]
+	[-cat [-ignoreCrc] <src> ...]
+	[-checksum [-v] <src> ...]
+	[-chgrp [-R] GROUP PATH...]
+	[-chmod [-R] <MODE[,MODE]... | OCTALMODE> PATH...]
+	[-chown [-R] [OWNER][:[GROUP]] PATH...]
+	[-concat <target path> <src path> <src path> ...]
+	[-copyFromLocal [-f] [-p] [-l] [-d] [-t <thread count>] [-q <thread pool queue size>] <localsrc> ... <dst>]
+	[-copyToLocal [-f] [-p] [-crc] [-ignoreCrc] [-t <thread count>] [-q <thread pool queue size>] <src> ... <localdst>]
+	[-count [-q] [-h] [-v] [-t [<storage type>]] [-u] [-x] [-e] [-s] <path> ...]
+	[-cp [-f] [-p | -p[topax]] [-d] [-t <thread count>] [-q <thread pool queue size>] <src> ... <dst>]
+	[-createSnapshot <snapshotDir> [<snapshotName>]]
+	[-deleteSnapshot <snapshotDir> <snapshotName>]
+	[-df [-h] [<path> ...]]
+	[-du [-s] [-h] [-v] [-x] <path> ...]
+	[-expunge [-immediate] [-fs <path>]]
+	[-find <path> ... <expression> ...]
+	[-get [-f] [-p] [-crc] [-ignoreCrc] [-t <thread count>] [-q <thread pool queue size>] <src> ... <localdst>]
+	[-getfacl [-R] <path>]
+	[-getfattr [-R] {-n name | -d} [-e en] <path>]
+	[-getmerge [-nl] [-skip-empty-file] <src> <localdst>]
+	[-head <file>]
+	[-help [cmd ...]]
+	[-ls [-C] [-d] [-h] [-q] [-R] [-t] [-S] [-r] [-u] [-e] [<path> ...]]
+	[-mkdir [-p] <path> ...]
+	[-moveFromLocal [-f] [-p] [-l] [-d] <localsrc> ... <dst>]
+	[-moveToLocal <src> <localdst>]
+	[-mv <src> ... <dst>]
+	[-put [-f] [-p] [-l] [-d] [-t <thread count>] [-q <thread pool queue size>] <localsrc> ... <dst>]
+	[-renameSnapshot <snapshotDir> <oldName> <newName>]
+	[-rm [-f] [-r|-R] [-skipTrash] [-safely] <src> ...]
+	[-rmdir [--ignore-fail-on-non-empty] <dir> ...]
+	[-setfacl [-R] [{-b|-k} {-m|-x <acl_spec>} <path>]|[--set <acl_spec> <path>]]
+	[-setfattr {-n name [-v value] | -x name} <path>]
+	[-setrep [-R] [-w] <rep> <path> ...]
+	[-stat [format] <path> ...]
+	[-tail [-f] [-s <sleep interval>] <file>]
+	[-test -[defswrz] <path>]
+	[-text [-ignoreCrc] <src> ...]
+	[-touch [-a] [-m] [-t TIMESTAMP (yyyyMMdd:HHmmss) ] [-c] <path> ...]
+	[-touchz <path> ...]
+	[-truncate [-w] <length> <path> ...]
+	[-usage [cmd ...]]
+
+Generic options supported are:
+-conf <configuration file>        specify an application configuration file
+-D <property=value>               define a value for a given property
+-fs <file:///|hdfs://namenode:port> specify default filesystem URL to use, overrides 'fs.defaultFS' property from configurations.
+-jt <local|resourcemanager:port>  specify a ResourceManager
+-files <file1,...>                specify a comma-separated list of files to be copied to the map reduce cluster
+-libjars <jar1,...>               specify a comma-separated list of jar files to be included in the classpath
+-archives <archive1,...>          specify a comma-separated list of archives to be unarchived on the compute machines
+
+The general command line syntax is:
+command [genericOptions] [commandOptions]
+
+Usage: hadoop fs [generic options] -cat [-ignoreCrc] <src> ...
+Aayushs-MBP: Practical 3/ $ hadoop fs -cat > sample1.txt /
+2022-10-07 12:28:16,631 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+cat: `/': Is a directory
+Aayushs-MBP: Practical 3/ $ hadoop fs -cat > sample1.txt /first
+2022-10-07 12:28:26,253 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+cat: `/first': Is a directory
+Aayushs-MBP: Practical 3/ $ hadoop fs -put /input/file01.txt /first
+2022-10-07 12:29:04,087 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+put: `/input/file01.txt': No such file or directory
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls /prac3/input/file01.txt 
+2022-10-07 12:29:48,406 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+-rw-r--r--   1 aayush supergroup         22 2022-10-07 12:13 /prac3/input/file01.txt
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls /prac3/input 
+2022-10-07 12:29:54,101 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 2 items
+-rw-r--r--   1 aayush supergroup         22 2022-10-07 12:13 /prac3/input/file01.txt
+-rw-r--r--   1 aayush supergroup         40 2022-10-07 12:13 /prac3/input/file02.txt
+Aayushs-MBP: Practical 3/ $ hadoop fs -put file01.txt /first
+2022-10-07 12:30:26,096 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+put: `file01.txt': No such file or directory
+Aayushs-MBP: Practical 3/ $ hadoop fs -put input/file01.txt /first
+2022-10-07 12:30:34,599 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Aayushs-MBP: Practical 3/ $ hadoop jar wc.jar WordCount /first/file01.txt /first/out
+2022-10-07 12:31:27,021 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-10-07 12:31:27,566 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-10-07 12:31:27,876 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2022-10-07 12:31:27,887 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/aayush/.staging/job_1665122688341_0005
+2022-10-07 12:31:28,073 INFO input.FileInputFormat: Total input files to process : 1
+2022-10-07 12:31:28,132 INFO mapreduce.JobSubmitter: number of splits:1
+2022-10-07 12:31:28,247 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1665122688341_0005
+2022-10-07 12:31:28,247 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-10-07 12:31:28,443 INFO conf.Configuration: resource-types.xml not found
+2022-10-07 12:31:28,444 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-10-07 12:31:28,719 INFO impl.YarnClientImpl: Submitted application application_1665122688341_0005
+2022-10-07 12:31:28,772 INFO mapreduce.Job: The url to track the job: http://Aayushs-MacBook-Pro.local:8088/proxy/application_1665122688341_0005/
+2022-10-07 12:31:28,772 INFO mapreduce.Job: Running job: job_1665122688341_0005
+2022-10-07 12:31:35,887 INFO mapreduce.Job: Job job_1665122688341_0005 running in uber mode : false
+2022-10-07 12:31:35,887 INFO mapreduce.Job:  map 0% reduce 0%
+2022-10-07 12:31:40,947 INFO mapreduce.Job:  map 100% reduce 0%
+2022-10-07 12:31:44,976 INFO mapreduce.Job:  map 100% reduce 100%
+2022-10-07 12:31:44,987 INFO mapreduce.Job: Job job_1665122688341_0005 completed successfully
+2022-10-07 12:31:45,067 INFO mapreduce.Job: Counters: 50
+	File System Counters
+		FILE: Number of bytes read=40
+		FILE: Number of bytes written=550997
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=125
+		HDFS: Number of bytes written=22
+		HDFS: Number of read operations=8
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=2199
+		Total time spent by all reduces in occupied slots (ms)=1925
+		Total time spent by all map tasks (ms)=2199
+		Total time spent by all reduce tasks (ms)=1925
+		Total vcore-milliseconds taken by all map tasks=2199
+		Total vcore-milliseconds taken by all reduce tasks=1925
+		Total megabyte-milliseconds taken by all map tasks=2251776
+		Total megabyte-milliseconds taken by all reduce tasks=1971200
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=4
+		Map output bytes=38
+		Map output materialized bytes=40
+		Input split bytes=103
+		Combine input records=4
+		Combine output records=3
+		Reduce input groups=3
+		Reduce shuffle bytes=40
+		Reduce input records=3
+		Reduce output records=3
+		Spilled Records=6
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=74
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0
+		Total committed heap usage (bytes)=533200896
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=22
+	File Output Format Counters 
+		Bytes Written=22
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls /
+2022-10-07 12:32:47,397 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 3 items
+drwxr-xr-x   - aayush supergroup          0 2022-10-07 12:31 /first
+drwxr-xr-x   - aayush supergroup          0 2022-10-07 12:03 /prac3
+drwx------   - aayush supergroup          0 2022-10-07 12:16 /tmp
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls /prac3
+2022-10-07 12:32:52,859 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 1 items
+drwxr-xr-x   - aayush supergroup          0 2022-10-07 12:13 /prac3/input
+Aayushs-MBP: Practical 3/ $ hadoop fs -ls /prac3/input
+2022-10-07 12:32:58,773 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 2 items
+-rw-r--r--   1 aayush supergroup         22 2022-10-07 12:13 /prac3/input/file01.txt
+-rw-r--r--   1 aayush supergroup         40 2022-10-07 12:13 /prac3/input/file02.txt
+Aayushs-MBP: Practical 3/ $ hadoop jar wc.jar WordCount /prac3/input/file01.txt /prac3/out
+2022-10-07 12:33:34,811 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-10-07 12:33:35,381 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-10-07 12:33:35,822 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2022-10-07 12:33:35,835 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/aayush/.staging/job_1665122688341_0006
+2022-10-07 12:33:36,024 INFO input.FileInputFormat: Total input files to process : 1
+2022-10-07 12:33:36,076 INFO mapreduce.JobSubmitter: number of splits:1
+2022-10-07 12:33:36,579 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1665122688341_0006
+2022-10-07 12:33:36,579 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-10-07 12:33:36,735 INFO conf.Configuration: resource-types.xml not found
+2022-10-07 12:33:36,735 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-10-07 12:33:36,787 INFO impl.YarnClientImpl: Submitted application application_1665122688341_0006
+2022-10-07 12:33:36,819 INFO mapreduce.Job: The url to track the job: http://Aayushs-MacBook-Pro.local:8088/proxy/application_1665122688341_0006/
+2022-10-07 12:33:36,819 INFO mapreduce.Job: Running job: job_1665122688341_0006
+2022-10-07 12:33:42,911 INFO mapreduce.Job: Job job_1665122688341_0006 running in uber mode : false
+2022-10-07 12:33:42,913 INFO mapreduce.Job:  map 0% reduce 0%
+2022-10-07 12:33:46,976 INFO mapreduce.Job:  map 100% reduce 0%
+2022-10-07 12:33:52,017 INFO mapreduce.Job:  map 100% reduce 100%
+2022-10-07 12:33:52,026 INFO mapreduce.Job: Job job_1665122688341_0006 completed successfully
+2022-10-07 12:33:52,108 INFO mapreduce.Job: Counters: 50
+	File System Counters
+		FILE: Number of bytes read=40
+		FILE: Number of bytes written=551009
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=131
+		HDFS: Number of bytes written=22
+		HDFS: Number of read operations=8
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=1914
+		Total time spent by all reduces in occupied slots (ms)=1879
+		Total time spent by all map tasks (ms)=1914
+		Total time spent by all reduce tasks (ms)=1879
+		Total vcore-milliseconds taken by all map tasks=1914
+		Total vcore-milliseconds taken by all reduce tasks=1879
+		Total megabyte-milliseconds taken by all map tasks=1959936
+		Total megabyte-milliseconds taken by all reduce tasks=1924096
+	Map-Reduce Framework
+		Map input records=1
+		Map output records=4
+		Map output bytes=38
+		Map output materialized bytes=40
+		Input split bytes=109
+		Combine input records=4
+		Combine output records=3
+		Reduce input groups=3
+		Reduce shuffle bytes=40
+		Reduce input records=3
+		Reduce output records=3
+		Spilled Records=6
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=77
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0
+		Total committed heap usage (bytes)=558366720
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=22
+	File Output Format Counters 
+		Bytes Written=22
+Aayushs-MBP: Practical 3/ $ hadoop jar wc.jar WordCount /prac3/input/ /prac3/out
+2022-10-07 12:34:00,852 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-10-07 12:34:01,388 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+Exception in thread "main" org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory hdfs://localhost:9000/prac3/out already exists
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.checkOutputSpecs(FileOutputFormat.java:164)
+	at org.apache.hadoop.mapreduce.JobSubmitter.checkSpecs(JobSubmitter.java:277)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:143)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1571)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1568)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1568)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1589)
+	at WordCount.main(WordCount.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:323)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:236)
+Aayushs-MBP: Practical 3/ $ hadoop jar wc.jar WordCount /prac3/input /prac3/out
+2022-10-07 12:34:08,346 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-10-07 12:34:08,898 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+Exception in thread "main" org.apache.hadoop.mapred.FileAlreadyExistsException: Output directory hdfs://localhost:9000/prac3/out already exists
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.checkOutputSpecs(FileOutputFormat.java:164)
+	at org.apache.hadoop.mapreduce.JobSubmitter.checkSpecs(JobSubmitter.java:277)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:143)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1571)
+	at org.apache.hadoop.mapreduce.Job$11.run(Job.java:1568)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1878)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1568)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1589)
+	at WordCount.main(WordCount.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:323)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:236)
+Aayushs-MBP: Practical 3/ $ hadoop jar wc.jar WordCount /prac3/input /prac3/output
+2022-10-07 12:34:20,395 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-10-07 12:34:20,926 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at /0.0.0.0:8032
+2022-10-07 12:34:21,217 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2022-10-07 12:34:21,228 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/aayush/.staging/job_1665122688341_0007
+2022-10-07 12:34:21,409 INFO input.FileInputFormat: Total input files to process : 2
+2022-10-07 12:34:21,448 INFO mapreduce.JobSubmitter: number of splits:2
+2022-10-07 12:34:21,559 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1665122688341_0007
+2022-10-07 12:34:21,559 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2022-10-07 12:34:21,710 INFO conf.Configuration: resource-types.xml not found
+2022-10-07 12:34:21,710 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2022-10-07 12:34:21,759 INFO impl.YarnClientImpl: Submitted application application_1665122688341_0007
+2022-10-07 12:34:21,788 INFO mapreduce.Job: The url to track the job: http://Aayushs-MacBook-Pro.local:8088/proxy/application_1665122688341_0007/
+2022-10-07 12:34:21,788 INFO mapreduce.Job: Running job: job_1665122688341_0007
+2022-10-07 12:34:27,866 INFO mapreduce.Job: Job job_1665122688341_0007 running in uber mode : false
+2022-10-07 12:34:27,868 INFO mapreduce.Job:  map 0% reduce 0%
+2022-10-07 12:34:31,928 INFO mapreduce.Job:  map 100% reduce 0%
+2022-10-07 12:34:36,988 INFO mapreduce.Job:  map 100% reduce 100%
+2022-10-07 12:34:37,000 INFO mapreduce.Job: Job job_1665122688341_0007 completed successfully
+2022-10-07 12:34:37,073 INFO mapreduce.Job: Counters: 50
+	File System Counters
+		FILE: Number of bytes read=103
+		FILE: Number of bytes written=826609
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=280
+		HDFS: Number of bytes written=57
+		HDFS: Number of read operations=11
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=2
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Launched map tasks=2
+		Launched reduce tasks=1
+		Data-local map tasks=2
+		Total time spent by all maps in occupied slots (ms)=4469
+		Total time spent by all reduces in occupied slots (ms)=1855
+		Total time spent by all map tasks (ms)=4469
+		Total time spent by all reduce tasks (ms)=1855
+		Total vcore-milliseconds taken by all map tasks=4469
+		Total vcore-milliseconds taken by all reduce tasks=1855
+		Total megabyte-milliseconds taken by all map tasks=4576256
+		Total megabyte-milliseconds taken by all reduce tasks=1899520
+	Map-Reduce Framework
+		Map input records=2
+		Map output records=10
+		Map output bytes=102
+		Map output materialized bytes=109
+		Input split bytes=218
+		Combine input records=10
+		Combine output records=8
+		Reduce input groups=7
+		Reduce shuffle bytes=109
+		Reduce input records=8
+		Reduce output records=7
+		Spilled Records=16
+		Shuffled Maps =2
+		Failed Shuffles=0
+		Merged Map outputs=2
+		GC time elapsed (ms)=133
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0
+		Total committed heap usage (bytes)=854589440
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=62
+	File Output Format Counters 
+		Bytes Written=57
+Aayushs-MBP: Practical 3/ $ 
