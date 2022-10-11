@@ -1,0 +1,600 @@
+Terminals unused in grammar
+
+    DT
+
+
+State 6 conflicts: 4 shift/reduce
+
+
+Grammar
+
+    0 $accept: SS $end
+
+    1 SS: S SS
+    2   | S
+
+    3 S: DO_WHILE_STMT
+    4  | SWITCH_STMT
+    5  | BLK
+    6  | ';'
+
+    7 SWSS: SWS SWSS
+    8     | SWS
+
+    9 SWS: SS
+   10    | BREAK ';'
+
+   11 DO_WHILE_STMT: DO BLK WHILE '(' COND ')' ';'
+
+   12 SWITCH_STMT: SWITCH '(' ID ')' '{' CASE_STMTS DEFAULT_STMT '}'
+
+   13 CASE_STMTS: CASE_STMT CASE_STMTS
+   14           | CASE_STMT
+
+   15 CASE_STMT: CASE CONST ':' SWSS
+
+   16 DEFAULT_STMT: DEFAULT ':' SWSS
+
+   17 BLK: '{' SS '}'
+
+   18 COND: ID REOP ID
+   19     | ID REOP CONST
+   20     | CONST REOP ID
+   21     | CONST REOP CONST
+
+   22 CONST: INT_CONST
+   23      | CHAR_CONST
+   24      | BOOL_CONST
+   25      | STR_CONST
+
+
+Terminals, with rules where they appear
+
+    $end (0) 0
+    '(' (40) 11 12
+    ')' (41) 11 12
+    ':' (58) 15 16
+    ';' (59) 6 10 11
+    '{' (123) 12 17
+    '}' (125) 12 17
+    error (256)
+    WHILE (258) 11
+    DO (259) 11
+    SWITCH (260) 12
+    CASE (261) 15
+    DEFAULT (262) 16
+    BREAK (263) 10
+    REOP (264) 18 19 20 21
+    DT (265)
+    ID (266) 12 18 19 20
+    INT_CONST (267) 22
+    BOOL_CONST (268) 24
+    CHAR_CONST (269) 23
+    STR_CONST (270) 25
+
+
+Nonterminals, with rules where they appear
+
+    $accept (22)
+        on left: 0
+    SS (23)
+        on left: 1 2
+        on right: 0 1 9 17
+    S (24)
+        on left: 3 4 5 6
+        on right: 1 2
+    SWSS (25)
+        on left: 7 8
+        on right: 7 15 16
+    SWS (26)
+        on left: 9 10
+        on right: 7 8
+    DO_WHILE_STMT (27)
+        on left: 11
+        on right: 3
+    SWITCH_STMT (28)
+        on left: 12
+        on right: 4
+    CASE_STMTS (29)
+        on left: 13 14
+        on right: 12 13
+    CASE_STMT (30)
+        on left: 15
+        on right: 13 14
+    DEFAULT_STMT (31)
+        on left: 16
+        on right: 12
+    BLK (32)
+        on left: 17
+        on right: 5 11
+    COND (33)
+        on left: 18 19 20 21
+        on right: 11
+    CONST (34)
+        on left: 22 23 24 25
+        on right: 15 19 20 21
+
+
+State 0
+
+    0 $accept: . SS $end
+
+    DO      shift, and go to state 1
+    SWITCH  shift, and go to state 2
+    ';'     shift, and go to state 3
+    '{'     shift, and go to state 4
+
+    SS             go to state 5
+    S              go to state 6
+    DO_WHILE_STMT  go to state 7
+    SWITCH_STMT    go to state 8
+    BLK            go to state 9
+
+
+State 1
+
+   11 DO_WHILE_STMT: DO . BLK WHILE '(' COND ')' ';'
+
+    '{'  shift, and go to state 4
+
+    BLK  go to state 10
+
+
+State 2
+
+   12 SWITCH_STMT: SWITCH . '(' ID ')' '{' CASE_STMTS DEFAULT_STMT '}'
+
+    '('  shift, and go to state 11
+
+
+State 3
+
+    6 S: ';' .
+
+    $default  reduce using rule 6 (S)
+
+
+State 4
+
+   17 BLK: '{' . SS '}'
+
+    DO      shift, and go to state 1
+    SWITCH  shift, and go to state 2
+    ';'     shift, and go to state 3
+    '{'     shift, and go to state 4
+
+    SS             go to state 12
+    S              go to state 6
+    DO_WHILE_STMT  go to state 7
+    SWITCH_STMT    go to state 8
+    BLK            go to state 9
+
+
+State 5
+
+    0 $accept: SS . $end
+
+    $end  shift, and go to state 13
+
+
+State 6
+
+    1 SS: S . SS
+    2   | S .
+
+    DO      shift, and go to state 1
+    SWITCH  shift, and go to state 2
+    ';'     shift, and go to state 3
+    '{'     shift, and go to state 4
+
+    DO        [reduce using rule 2 (SS)]
+    SWITCH    [reduce using rule 2 (SS)]
+    ';'       [reduce using rule 2 (SS)]
+    '{'       [reduce using rule 2 (SS)]
+    $default  reduce using rule 2 (SS)
+
+    SS             go to state 14
+    S              go to state 6
+    DO_WHILE_STMT  go to state 7
+    SWITCH_STMT    go to state 8
+    BLK            go to state 9
+
+
+State 7
+
+    3 S: DO_WHILE_STMT .
+
+    $default  reduce using rule 3 (S)
+
+
+State 8
+
+    4 S: SWITCH_STMT .
+
+    $default  reduce using rule 4 (S)
+
+
+State 9
+
+    5 S: BLK .
+
+    $default  reduce using rule 5 (S)
+
+
+State 10
+
+   11 DO_WHILE_STMT: DO BLK . WHILE '(' COND ')' ';'
+
+    WHILE  shift, and go to state 15
+
+
+State 11
+
+   12 SWITCH_STMT: SWITCH '(' . ID ')' '{' CASE_STMTS DEFAULT_STMT '}'
+
+    ID  shift, and go to state 16
+
+
+State 12
+
+   17 BLK: '{' SS . '}'
+
+    '}'  shift, and go to state 17
+
+
+State 13
+
+    0 $accept: SS $end .
+
+    $default  accept
+
+
+State 14
+
+    1 SS: S SS .
+
+    $default  reduce using rule 1 (SS)
+
+
+State 15
+
+   11 DO_WHILE_STMT: DO BLK WHILE . '(' COND ')' ';'
+
+    '('  shift, and go to state 18
+
+
+State 16
+
+   12 SWITCH_STMT: SWITCH '(' ID . ')' '{' CASE_STMTS DEFAULT_STMT '}'
+
+    ')'  shift, and go to state 19
+
+
+State 17
+
+   17 BLK: '{' SS '}' .
+
+    $default  reduce using rule 17 (BLK)
+
+
+State 18
+
+   11 DO_WHILE_STMT: DO BLK WHILE '(' . COND ')' ';'
+
+    ID          shift, and go to state 20
+    INT_CONST   shift, and go to state 21
+    BOOL_CONST  shift, and go to state 22
+    CHAR_CONST  shift, and go to state 23
+    STR_CONST   shift, and go to state 24
+
+    COND   go to state 25
+    CONST  go to state 26
+
+
+State 19
+
+   12 SWITCH_STMT: SWITCH '(' ID ')' . '{' CASE_STMTS DEFAULT_STMT '}'
+
+    '{'  shift, and go to state 27
+
+
+State 20
+
+   18 COND: ID . REOP ID
+   19     | ID . REOP CONST
+
+    REOP  shift, and go to state 28
+
+
+State 21
+
+   22 CONST: INT_CONST .
+
+    $default  reduce using rule 22 (CONST)
+
+
+State 22
+
+   24 CONST: BOOL_CONST .
+
+    $default  reduce using rule 24 (CONST)
+
+
+State 23
+
+   23 CONST: CHAR_CONST .
+
+    $default  reduce using rule 23 (CONST)
+
+
+State 24
+
+   25 CONST: STR_CONST .
+
+    $default  reduce using rule 25 (CONST)
+
+
+State 25
+
+   11 DO_WHILE_STMT: DO BLK WHILE '(' COND . ')' ';'
+
+    ')'  shift, and go to state 29
+
+
+State 26
+
+   20 COND: CONST . REOP ID
+   21     | CONST . REOP CONST
+
+    REOP  shift, and go to state 30
+
+
+State 27
+
+   12 SWITCH_STMT: SWITCH '(' ID ')' '{' . CASE_STMTS DEFAULT_STMT '}'
+
+    CASE  shift, and go to state 31
+
+    CASE_STMTS  go to state 32
+    CASE_STMT   go to state 33
+
+
+State 28
+
+   18 COND: ID REOP . ID
+   19     | ID REOP . CONST
+
+    ID          shift, and go to state 34
+    INT_CONST   shift, and go to state 21
+    BOOL_CONST  shift, and go to state 22
+    CHAR_CONST  shift, and go to state 23
+    STR_CONST   shift, and go to state 24
+
+    CONST  go to state 35
+
+
+State 29
+
+   11 DO_WHILE_STMT: DO BLK WHILE '(' COND ')' . ';'
+
+    ';'  shift, and go to state 36
+
+
+State 30
+
+   20 COND: CONST REOP . ID
+   21     | CONST REOP . CONST
+
+    ID          shift, and go to state 37
+    INT_CONST   shift, and go to state 21
+    BOOL_CONST  shift, and go to state 22
+    CHAR_CONST  shift, and go to state 23
+    STR_CONST   shift, and go to state 24
+
+    CONST  go to state 38
+
+
+State 31
+
+   15 CASE_STMT: CASE . CONST ':' SWSS
+
+    INT_CONST   shift, and go to state 21
+    BOOL_CONST  shift, and go to state 22
+    CHAR_CONST  shift, and go to state 23
+    STR_CONST   shift, and go to state 24
+
+    CONST  go to state 39
+
+
+State 32
+
+   12 SWITCH_STMT: SWITCH '(' ID ')' '{' CASE_STMTS . DEFAULT_STMT '}'
+
+    DEFAULT  shift, and go to state 40
+
+    DEFAULT_STMT  go to state 41
+
+
+State 33
+
+   13 CASE_STMTS: CASE_STMT . CASE_STMTS
+   14           | CASE_STMT .
+
+    CASE  shift, and go to state 31
+
+    $default  reduce using rule 14 (CASE_STMTS)
+
+    CASE_STMTS  go to state 42
+    CASE_STMT   go to state 33
+
+
+State 34
+
+   18 COND: ID REOP ID .
+
+    $default  reduce using rule 18 (COND)
+
+
+State 35
+
+   19 COND: ID REOP CONST .
+
+    $default  reduce using rule 19 (COND)
+
+
+State 36
+
+   11 DO_WHILE_STMT: DO BLK WHILE '(' COND ')' ';' .
+
+    $default  reduce using rule 11 (DO_WHILE_STMT)
+
+
+State 37
+
+   20 COND: CONST REOP ID .
+
+    $default  reduce using rule 20 (COND)
+
+
+State 38
+
+   21 COND: CONST REOP CONST .
+
+    $default  reduce using rule 21 (COND)
+
+
+State 39
+
+   15 CASE_STMT: CASE CONST . ':' SWSS
+
+    ':'  shift, and go to state 43
+
+
+State 40
+
+   16 DEFAULT_STMT: DEFAULT . ':' SWSS
+
+    ':'  shift, and go to state 44
+
+
+State 41
+
+   12 SWITCH_STMT: SWITCH '(' ID ')' '{' CASE_STMTS DEFAULT_STMT . '}'
+
+    '}'  shift, and go to state 45
+
+
+State 42
+
+   13 CASE_STMTS: CASE_STMT CASE_STMTS .
+
+    $default  reduce using rule 13 (CASE_STMTS)
+
+
+State 43
+
+   15 CASE_STMT: CASE CONST ':' . SWSS
+
+    DO      shift, and go to state 1
+    SWITCH  shift, and go to state 2
+    BREAK   shift, and go to state 46
+    ';'     shift, and go to state 3
+    '{'     shift, and go to state 4
+
+    SS             go to state 47
+    S              go to state 6
+    SWSS           go to state 48
+    SWS            go to state 49
+    DO_WHILE_STMT  go to state 7
+    SWITCH_STMT    go to state 8
+    BLK            go to state 9
+
+
+State 44
+
+   16 DEFAULT_STMT: DEFAULT ':' . SWSS
+
+    DO      shift, and go to state 1
+    SWITCH  shift, and go to state 2
+    BREAK   shift, and go to state 46
+    ';'     shift, and go to state 3
+    '{'     shift, and go to state 4
+
+    SS             go to state 47
+    S              go to state 6
+    SWSS           go to state 50
+    SWS            go to state 49
+    DO_WHILE_STMT  go to state 7
+    SWITCH_STMT    go to state 8
+    BLK            go to state 9
+
+
+State 45
+
+   12 SWITCH_STMT: SWITCH '(' ID ')' '{' CASE_STMTS DEFAULT_STMT '}' .
+
+    $default  reduce using rule 12 (SWITCH_STMT)
+
+
+State 46
+
+   10 SWS: BREAK . ';'
+
+    ';'  shift, and go to state 51
+
+
+State 47
+
+    9 SWS: SS .
+
+    $default  reduce using rule 9 (SWS)
+
+
+State 48
+
+   15 CASE_STMT: CASE CONST ':' SWSS .
+
+    $default  reduce using rule 15 (CASE_STMT)
+
+
+State 49
+
+    7 SWSS: SWS . SWSS
+    8     | SWS .
+
+    DO      shift, and go to state 1
+    SWITCH  shift, and go to state 2
+    BREAK   shift, and go to state 46
+    ';'     shift, and go to state 3
+    '{'     shift, and go to state 4
+
+    $default  reduce using rule 8 (SWSS)
+
+    SS             go to state 47
+    S              go to state 6
+    SWSS           go to state 52
+    SWS            go to state 49
+    DO_WHILE_STMT  go to state 7
+    SWITCH_STMT    go to state 8
+    BLK            go to state 9
+
+
+State 50
+
+   16 DEFAULT_STMT: DEFAULT ':' SWSS .
+
+    $default  reduce using rule 16 (DEFAULT_STMT)
+
+
+State 51
+
+   10 SWS: BREAK ';' .
+
+    $default  reduce using rule 10 (SWS)
+
+
+State 52
+
+    7 SWSS: SWS SWSS .
+
+    $default  reduce using rule 7 (SWSS)
