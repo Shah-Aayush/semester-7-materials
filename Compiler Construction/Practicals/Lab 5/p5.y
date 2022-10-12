@@ -1,7 +1,6 @@
 %{
 	#include <stdio.h>
 	#include <stdlib.h>
-	void yyerror(char *msg);
 	extern int value[];
 %}
 
@@ -44,10 +43,7 @@ F : NUM		{$$ = $1;}
 %%
 
 
-void yyerror(char *msg)
-{
-	printf("%s\n",msg);
-}
+
 int main()
 {
   yyparse();
