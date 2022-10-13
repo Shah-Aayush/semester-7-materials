@@ -6,7 +6,7 @@ void yywrap();
 int count_for=0,count_if=0,count_while=0,count_switch=0,count_do_while=0;
 extern int line;
 %}
-%token WHILE DO SWITCH CASE DEFAULT BREAK DT ID INT_CONST BOOL_CONST CHAR_CONST STR_CONST LE GE EQ NE AND OR
+%token WHILE DO SWITCH CASE DEFAULT BREAK DT ID INT_CONST BOOL_CONST CHAR_CONST STR_CONST LE GE EQ EQ1 NE AND OR FOR EQSN IDSET
 
 %right '='
 %left AND OR
@@ -20,13 +20,18 @@ extern int line;
 
 PROG : DT ID '(' ')' BLK;
 
-BLK :   '{' SS '}';
+BLK :   '{' BS '}';
+
+BS : SS
+    |
+    ;
 
 SS  :   S SS
     |   S
     ;
 
 S   :   DO_WHILE_STMT
+    |   WHILE_STMT
     |   SWITCH_STMT
     |   BLK
     |   E ';'
@@ -34,11 +39,17 @@ S   :   DO_WHILE_STMT
     ;
 
 SWSS: SS BRK
+    | BRK
     ;
 
 BRK : BREAK ';'
     |
     ;
+
+
+;
+
+WHILE_STMT : WHILE '(' E ')' BLK  {count_while++;};
 
 DO_WHILE_STMT   :   DO BLK WHILE '(' E ')' ';' {count_do_while++;};
 
@@ -89,5 +100,7 @@ void yyerror(char *msg) {
 
 void yywrap() {
     printf("Number of do while loop is %d\n", count_do_while);
+    printf("Number of while loop is %d\n", count_while);
+    printf("Number of for loop is %d\n", count_for);
     printf("Number of switch statements is %d\n", count_switch);
 }

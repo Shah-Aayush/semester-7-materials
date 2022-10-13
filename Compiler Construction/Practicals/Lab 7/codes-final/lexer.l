@@ -9,6 +9,7 @@ int line = 1;
 "\t"|" " {}
 "int"|"float"|"double"|"char"   {return DT;}
 "==" {return EQ;}
+"=" {return EQ1;}
 "!=" {return NE;}
 "<=" {return LE;}
 ">=" {return GE;}
@@ -26,5 +27,6 @@ int line = 1;
 "case"  {return CASE;}
 "default"   {return DEFAULT;}
 "break" {return BREAK;}
+"for" {return FOR;}
 ([_a-zA-Z](0-9)*)+	{return ID;}
 %%

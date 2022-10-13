@@ -19,7 +19,7 @@ A : ID '=' A		{value[$1]=$3;printf(" value=%d\n",value[$1]); $$=$3;}
   | R			{$$=$1;}
 ;
 
-R : F '=''=' F		{ if($1 == $4){printf("%d is equal to %d\n",$1,$4);}else{ printf("%d is not equal to %d\n",$1,$4);};}
+R : F 00'=''=' F		{ if($1 == $4){printf("%d is equal to %d\n",$1,$4);}else{ printf("%d is not equal to %d\n",$1,$4);};}
   | F '<''=' F		{ if($1 <= $4){printf("%d is less than or equal to %d\n",$1,$4);}else{ printf("%d is not equal to %d\n",$1,$4);};}
   | F '>''=' F		{ if($1 >= $4){printf("%d is greather than or equal to %d\n",$1,$4);}else{ printf("%d is not equal to %d\n",$1,$4);};}
   ;

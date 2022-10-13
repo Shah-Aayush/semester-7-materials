@@ -1966,8 +1966,3 @@ int main(){
 	printf("\n total no. of token = %d\n", tokens); 
 	return 0;
 }
-
-/*** multiline comment, float constant, character constant, string constant, symbols***/
-
-// 
-

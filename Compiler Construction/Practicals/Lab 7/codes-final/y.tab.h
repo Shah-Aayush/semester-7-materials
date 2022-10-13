@@ -54,10 +54,14 @@
      LE = 270,
      GE = 271,
      EQ = 272,
-     NE = 273,
-     AND = 274,
-     OR = 275,
-     UNARY = 276
+     EQ1 = 273,
+     NE = 274,
+     AND = 275,
+     OR = 276,
+     FOR = 277,
+     EQSN = 278,
+     IDSET = 279,
+     UNARY = 280
    };
 #endif
 /* Tokens.  */
@@ -76,10 +80,14 @@
 #define LE 270
 #define GE 271
 #define EQ 272
-#define NE 273
-#define AND 274
-#define OR 275
-#define UNARY 276
+#define EQ1 273
+#define NE 274
+#define AND 275
+#define OR 276
+#define FOR 277
+#define EQSN 278
+#define IDSET 279
+#define UNARY 280
 
 
 
