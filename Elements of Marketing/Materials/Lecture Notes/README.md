@@ -111,7 +111,8 @@
 		- preserve product quality
 		- measure consumer satisfication continously
 	- Ex. : Maruti alto
-7. overfuel demand
+7. overfull demand
+	- low supply , high demand
 	- de-marketing strategy
 	- old version phased out; new version launched.
 	
