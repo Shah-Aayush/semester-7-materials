@@ -183,24 +183,263 @@
 - high power factor
 
 ## Indirect core type induction furnace
-## Application of induction heating
+- suitable element heated by induction
+	- transfer heat to charge by radiation
+- temp automatically controlled w/o use of external equipment
+- application
+	- material of workpiece : metal/semiconductor
+		- to heat nonconductive materials
+	- used in process where temp are as low as 100 C and as high as 3k C
+	- domestic and commercial cooking
+	- industrial applications : melting, heat treating, preheating for welding, brazing, soldering, curing , sealing, shrink fitting
+	
 ## Comparision b/w high frequency and power frequency furnace
+|high freq|power freq|
+|---|---|
+|freq converter necessary|not required|
+|more energy required : 20-30% of same rating|less energy required|
+|maintenance cost is more|less|
+|less turbulence and stirring effect|more|
+|large scrap melts with more oxidation loss |less oxidation loss|
+|no specia starting procedure required|it is required|
+
 ## Dielectric heating
+- insulating material subjected to alternating electric field, atoms gets stressed 
+- due to interactomic friction, heat produced
+- heat loss is known as dielectric loss
+- dipole rotation/dipolar polarization
+- `P = V^2 w C tan &delta;`
+	- when delta is small : 
+	- P = V^2 w C &delta;
+	- I V 2 PIE f C
+	- power produced P = VI cos PHI
+	- 2 PIE f C V^2 cos PHI
+	- C = eps_{0} eps_{r} A/d
 ### Application of Dielectric heating
+- moisture removal
+- heating thin films
+- prepartion of thermo plastic resins
+- drying textiles
+- heat sealing of plastic sheets
+- sterilization of cerals
+- dehydration of food/tobacco
+	
 ### Merits of Dielectric heating
+- material to be heated is homogenous, alternating electric field is uniform : heat developed uniformaly and simulataneously throughout the entire mass of charge
+- materials heated by this process are non conducting. so by other methods heat cannot be conducted to inside so easily.
 ## Electric welding
+- joining together of two metal pieces by heating a temp high enough to cause softenign or appmelting with or without the application of pressure and with/without the use of filler materials
+- filler material melting <= welding metals
+	- > 800 F
+- combined action of heat and pressure
+
+- Resistance welding
+	- spot
+	- seam
+	- projection
+- electric arc welding
+	- carbon arc
+	- sheilded metal arc
+- electric beam welding
+
 ## Resistance welding
-## Spot welding
+- fusion b/w parts surfaces occures as a result of heat produced by resistance b/w parts
+- low voltage, high ampere welding current
+- pressure constant
+- W = I^2 R
+	- watts
+- Q = I^2 R t
+	- watt-sec or joules
+
+### Spot welding
+- most widely used resistance welding
+- heat produced from resistance of the current through the metal held under pressure by the electrodes 
+	- creates fusion of the two workpieces during spot welding
+- size,shape of formed welds controlled by size, contour of electrods
+- welding time controlled by computer program timer
+- to avoid electrodes melting and sticking by heat generation
+	- water cooling electrodes at junctions
+	- materials of electrodes : copper beryllium and copper tungsten
+	- high electrical conductivity and high thermal conductivity
+	- heat generation minimum and efficiently conducted away
+	
+- Applications
+	- lap welding for thin sheets
+	- in automobile and refrigerator bodies
+	- in aircraft engines
+	
 ## Seam welding
+- same as spot welding
+- except spots are spaced so closely together and overlap one another for making continous seam weld
+- roller type electrodes
+- resistance to electric current , pressure by circular electrodes
+- cooling : constant stream of water to electrodes
+- interrupter : periodic supply which is sufficient to heat welding point to avoid burning and wrapping of metal piece from high heat because of continous current.
+- series of weld spots => number of welding current pulses
+- magnitude of welding current => thickness of welding sheets
+
+- Applications
+	- leak proof joints in automobile fuel tanks
+	- metal seam welding except for copper and its alloys
+	- flange(edge) welds use in watertight tank
+
 ## Projection welding
+- 2+ spot weldes simulataneously by making raised portions/projections on one of the predefined location of one workpiece
+- pieces held under pressure of electrodes
+- projections : small raised areas
+	- shape : round,oval, circular, oblong, diamond
+	- formed by emobssing, casting, stamping, machining
+- workpieces placed b/w plain, large area electrodes in welding machine
+
+- Applications
+	- **steel** plate, galvanized sheet steel, stainless steels can be joined	
+	
 ## Electric Arc welding
+- electric arc b/w electrode and workpiece b/w two electrodes is utilized to weld base metals
+- heat required is produced with electric arc 
+	- with/without pressure and filler material
+- arc : consists of thermally emitted electrons , positive ions 
+- electrons and ions accelerated by potential field b/w source and work
+- produce heat while converting kinetic energy by collision with opp. charged element
+- electrodes can be permanent
+	- source of electrons/positive ions
+	- consumes in case : serves both as source of energy for welding from these particles and as a filler to the weld point.
+
+
 ## Carbon Arc welding
+- utilizes nonconsumable electrode to establish arc b/w itself and workpiece/electrode
+	- made of carbon/graphite
+- no shieliding gas is used
+- **SINGLE ELECTRODE CAW** 
+	- power supply for releasing hea : DC
+	- electrode : Anode (+ve)
+	- arc struck by touching electrode with job moemntarily and then taking away by appropriate distance(10-15 mm apart)
+	- arc affect the surface to be welded which form a pool of molten metal
+	- holder moved to complete the welding process
+- **TWIN ELECTRODE CAW**
+	- operates with : AC
+		- small ac power supplies
+	- arc maintained b/w two carbon electrodes held in special holder
+	- electric torch consists of 2 carbond electrodes adjested by thumb 
+	- mechanism located on the handle of electrode holder
+	- electrodes can be moved closer or further, making the arc of desired length
+	
+- Applications
+	- welding steel, nickel, aluminium, copper and their alloys
+	- used for brazing, pre heating/post heating
+	
+
 ## Shielded metal Arc welding
+- Shielded : ability to displace air surrounding the weld to avoid harmful effects of gases in air
+- Metal : core of electrode, conducting rod which contributes substantial portion of liquid metal to weld pool
+- Arc : plasma discharge which converts electrical energy -> heat
+- welding : metals joined by fusion
+- Also known as *stick welding process*
+- uses consumable stick electrode
+	- which conducts welding current from electrode holder to work
+	- as arc melts, end of electrode away, it becomes part of the weld metal
+- stick electrodes available lengths : 12in, 14in, 18in
+- welding arc vaporizes solid flux which covers electrodes forming gaseous cloud which serves functions like *protect molten weld metal* and *arc stability*
+- widely used process because of it's *low cost*, *flexibility*, *portability*, *versatility*
+	- electrodes low in cost
+- Applications
+	- fabrication of ships, bridges, pressure vessels, structurals *(extensively used in these)*
+	- used in manual mode only
+	
 ## Electric arc heating
+- arc b/w 2 electrodes initiated by **ionization** with visible light
+	- current through the electrodes increased
+- electric arc is form of electric discharge with highest current density and max temperature
+- breakdown voltage of electrode gap : function of pressure , type of gas surrounding electrodes
+- electrical resistance along arc creates heat which dissociatse more gas molecules and ionizes resulting atoms
+	- degree of ionization determined by temperature
+- temp. reaches around 3k-3.5k C
+	- lower section of electrodes glow when in operation
+## Direct arc furnace
+- arc established b/w electrodes and charge(workpiece)
+- arc is in direct contact with charge => heat produced direc conducted to charge which absorbs
+- max heat, high temp
+- type of electrodes
+	- carbon, graphite, self-baking electrodes
+- size of electrodes : 18 cm - 27 cm in diameter
+- temp range : 3k-3.5k C
+- trend : use of graphite electrodes : 95%+ world eletric steep production is produced using graphite electrodes
+- avg electrical resistance : 4-5 times higher, current density : 2.5x higher : high concentration of power can be achieved.
+- graphite electrodes : lower weight
+	- easy to handle
+	- break less often
+	- high thermal conductivity : resistant to heat and impact
+- oxidise : 
+	- grphite : about 600C
+	- carbon : about 400 C
+- application
+	- carbond : small furnace for manufacture of ferro-allowys, aluminimum, calcium carbide, phorphorous 
+	- self baking : electrochemical furnace
+	
 ## features of carbon,graphit electrodes
+- resistivity
+- oxidation
+- electrode consumption
+- cost
+### construction and operating principle
+
 ## Requirements of a good welding
+- weld is said to be good weld when it is free from
+	- external **defects**
+		> irregular width and heights of beads
+	- **deviation** of weld from prescribed dimensions
+	- **unfilled craters**/cavity/hole on the surface of welds
+	- **slag** on surface
+	- **porosity**/holes in outer layer
+	- hidden porosity in deposited metal
+	- hidden **cracks** in weld and parent metal
+	
 ## Welding electrods/rods
+- eletrode : carries current for welding
+	- piece of wire/rod
+	- with/without flux covering
+	- one hand : gripped in holder; other hand : arc set up
+- functions of core wire include 
+	- carry welding current
+	- serve as filler metal 
+- functions of flux covering include 
+	- provide
+		- alloying elements
+		- arc stabilizer
+		- insulator
+		- slag cover to protect weld, and slow coolding rate
+		- protective gaseous shield during welding
 ## types of welding electrodes
+| non consumable electrodes | consumable electrodes |
+|---|---|
+|intact throughout the welding|melts down during welding|
+|doesn't supply filler; required to supply separately|act as a filler|
+|after welding, remains unaffected|after welding, significant portion becomes integrated part of the weld bead|
+|doesn't act as filler, electrode material is independed of parent materials to be welded| electrodes material must be chosen based on parent material in order to maintein chemical compatibilty b/w them|
+|offers extended life; no frequent replacement is desired|frequent replacement usually desired, depends on electrode size,filler deposition rate|
+|ex.:gas tungsten arc welding, atomic hydrogen welding, carbon arc welding| electro-slag+gas welding, flux cored arc welding, submerged arc welding|
+
 ## Comparision of AC and DC weldings
+|DC welding| AC welding|
+|rectifier required|only transformer required|
+|high equipment cost|cheap cost|
+|stability more| less/weak stable|
+|uniform heating|non uniform heating|
+|bare+coated electrodes used|only coated electrodes should be used|
+|operating powerfactor high|powerfactor low, capacitor required to improve it|
+|safe as no load volage is low|dangerous as no load voltage is high|
+|electric energy consumption: 5-10 kWh/kg of deposited metal|3-4 kWh/kg of deposited metal|
+|arc blow occurs due to presence of non uniform magnetic field|not occurs due to uniform magnetic field|
+|efficiency low|efficiency high|
+
 ## Comparision of resistance and ARC weldings
-## Comparision of resistance and ARC weldings
+|resistance welding|arc welding|
+|source of supply : only AC|either AC or DC|
+|heat developed : due to flow of contact resistance | due to striking of arc b/w electrodes / electrodes-workpiece|
+|temp attained by workpiece is not so high| temp is so high; proper case should be taken during welding|
+|external pressure required|no external pressure required|
+|filler metal is not required to join two metal pieces|suitable filler electrodes are necessary to get proper welding|
+|suitable for mass production|suitable for repairwork|
+|power consumption : low|high|
+|operating power factor : low|high|
+|electrodes used : bar, roller, flat type *[nonconsumable]*|bare/coated *[consumable]*|
