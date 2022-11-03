@@ -11,14 +11,13 @@ int F();
 
 int main()
 {
-	
 	printf("Recursive descent parsing for the following grammar : \n");
 	printf("\tE->TE'\n");
 	printf("\tE'->+TE'/@\n");
 	printf("\tT->FT'\n");
 	printf("\tT'->*FT'/@\n");
 	printf("\tF->(E)/ID\n");
-	printf("\nEnter the string to be checked :");
+	printf("\nEnter the string to be checked : ");
 	scanf("%[^\n]s",input);
 	
 	if(E()){
@@ -30,7 +29,6 @@ int main()
 	}
 	else
 		printf("\nString not accepted");
-	
 }
 
 int E(){
@@ -50,25 +48,18 @@ int EP(){
 	if(input[i]=='+')
 		{
 			i++;
-			
 			if(T())
 				{
 					if(EP())
-						return(1);
-					
+						return(1);	
 					else
 						return(0);
-					
 				}
-			
 			else
 				return(0);
-			
 		}
-	
 	else
 		return(1);
-	
 }
 
 int T()
@@ -80,12 +71,9 @@ int T()
 			
 			else
 				return(0);
-			
 		}
-	
 	else
 		return(0);
-	
 }
 
 int TP()
@@ -97,20 +85,14 @@ int TP()
 				{
 					if(TP())
 						return(1);
-					
 					else
-						return(0);
-					
+						return(0);	
 				}
-			
 			else
 				return(0);
-			
 		}
-	
 	else
 		return(1);
-	
 }
 
 int F()
@@ -118,35 +100,26 @@ int F()
 	if(input[i]=='(')
 		{
 			i++;
-			
 			if(E())
 				{
 					if(input[i]==')')
 						{
 							i++;
-							return(1);
-							
+							return(1);	
 						}
 					else
 						return(0);
-					
 				}
-			
 			else
 				return(0);
-			
 		}
-	
 	else if(input[i]>='a'&&input[i]<='z'||input[i]>='A'&&input[i]<='Z')
 		{
 			i++;
 			return(1);
-			
 		}
-	
 	else
 		return(0);
-	
 }
 
 /*
