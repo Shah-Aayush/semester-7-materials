@@ -1,0 +1,1 @@
+- [useful resource for edge detection](/Users/aayush/Documents/sem 7/Digital Image and Video Processing/Practicals/Lab 8)
