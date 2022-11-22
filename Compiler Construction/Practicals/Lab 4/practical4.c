@@ -18,11 +18,11 @@ int main()  {
     }
     if(flag == 1)  {
         sprintf(productions[i++],"%s->ε\0",l);
-        printf("The productions after eliminating Left Recursion are:\n");
+        printf("\nThe productions after eliminating Left Recursion are:\n");
         for(j=0;j<i;j++)
             printf("%s\n",productions[j]);
     }
     else
-        printf("The Given Grammar has no Left Recursion");
+        printf("\nThe Given Grammar has no Left Recursion");
     return 0;
 }
