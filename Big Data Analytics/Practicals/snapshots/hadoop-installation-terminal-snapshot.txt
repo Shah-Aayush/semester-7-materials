@@ -1,0 +1,346 @@
+[resouce](https://medium.com/beeranddiapers/installing-hadoop-on-mac-a9a3649dbc4d)
+---
+Last login: Sun Aug 28 19:56:10 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Aayushs-MBP: ~/ $ cd '/Users/aayush/Documents/MINOR PROJECT/inventory-management-app'
+Aayushs-MBP: inventory-management-app/ $ git status
+On branch try-animation
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+	modified:   add-ons/06-Flutter-Image-capture-and-upload (modified content, untracked content)
+	modified:   add-ons/flutter_camera_demo (modified content)
+	modified:   add-ons/flutter_camera_demo copy (modified content, untracked content)
+	modified:   spence/ios/Podfile
+	modified:   spence/ios/Podfile.lock
+	modified:   spence/lib/camera_screen/AddImage.dart
+	modified:   spence/lib/camera_screen/DisplayPicture.dart
+	modified:   spence/lib/main.dart
+	modified:   spence/pubspec.lock
+	modified:   spence/pubspec.yaml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Aayushs-MBP: inventory-management-app/ $ git checkout master
+M	add-ons/06-Flutter-Image-capture-and-upload
+M	add-ons/flutter_camera_demo
+M	add-ons/flutter_camera_demo copy
+M	spence/ios/Podfile
+M	spence/ios/Podfile.lock
+M	spence/lib/camera_screen/AddImage.dart
+M	spence/lib/camera_screen/DisplayPicture.dart
+M	spence/lib/main.dart
+M	spence/pubspec.lock
+M	spence/pubspec.yaml
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+Aayushs-MBP: inventory-management-app/ $ git checkout try-animation
+M	add-ons/06-Flutter-Image-capture-and-upload
+M	add-ons/flutter_camera_demo
+M	add-ons/flutter_camera_demo copy
+M	spence/ios/Podfile
+M	spence/ios/Podfile.lock
+M	spence/lib/camera_screen/AddImage.dart
+M	spence/lib/camera_screen/DisplayPicture.dart
+M	spence/lib/main.dart
+M	spence/pubspec.lock
+M	spence/pubspec.yaml
+Switched to branch 'try-animation'
+Aayushs-MBP: inventory-management-app/ $ git add .
+Aayushs-MBP: inventory-management-app/ $ git commit -m 'try multi-image'
+[try-animation f1a8772] try multi-image
+ 7 files changed, 213 insertions(+), 42 deletions(-)
+Aayushs-MBP: inventory-management-app/ $ git push origin master
+git pushEverything up-to-date
+Aayushs-MBP: inventory-management-app/ $ git push origin try-animation
+Enumerating objects: 25, done.
+Counting objects: 100% (25/25), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 3.39 KiB | 3.39 MiB/s, done.
+Total 13 (delta 10), reused 0 (delta 0)
+remote: Resolving deltas: 100% (10/10), completed with 10 local objects.
+To https://github.com/Shah-Aayush/inventory-management-app.git
+   069919e..f1a8772  try-animation -> try-animation
+Aayushs-MBP: inventory-management-app/ $ git checkout master
+M	add-ons/06-Flutter-Image-capture-and-upload
+M	add-ons/flutter_camera_demo
+M	add-ons/flutter_camera_demo copy
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+Aayushs-MBP: inventory-management-app/ $ java -versino
+Unrecognized option: -versino
+Error: Could not create the Java Virtual Machine.
+Error: A fatal exception has occurred. Program will exit.
+Aayushs-MBP: inventory-management-app/ $ java -version
+openjdk version "17.0.4" 2022-07-19
+OpenJDK Runtime Environment Temurin-17.0.4+8 (build 17.0.4+8)
+OpenJDK 64-Bit Server VM Temurin-17.0.4+8 (build 17.0.4+8, mixed mode, sharing)
+Aayushs-MBP: inventory-management-app/ $ Brew install hadoop
+Running `brew update --auto-update`...
+==> Auto-updated Homebrew!
+Updated 4 taps (homebrew/cask-versions, homebrew/core, homebrew/cask and dart-lang/dart).
+==> New Formulae
+agg                              kubesess                         rdb
+burst                            libff                            ripsecrets
+dart-lang/dart/dart@2.17         libplacebo                       shaderc
+distrobox                        linux-headers@5.15               swiftdraw
+echidna                          popeye                           vineyard
+ghorg                            purescript-language-server
+kalign                           pymol
+==> New Casks
+bookwright          filen               glance-chamburr     orka-vm-tools       texifier
+cider               fresh               goxel               processing3         vscodium-insiders
+decentr             gamemaker           mints               reflect
+
+You have 26 outdated formulae and 3 outdated casks installed.
+You can upgrade them with brew upgrade
+or list them with brew outdated.
+
+==> Downloading https://ghcr.io/v2/homebrew/core/openjdk/11/manifests/11.0.16.1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/openjdk/11/blobs/sha256:b552bd2c8c776b1dc1d8def8b3
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:b552bd2c8c776b
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/hadoop/manifests/3.3.4-1
+######################################################################## 100.0%
+==> Downloading https://ghcr.io/v2/homebrew/core/hadoop/blobs/sha256:a7285cf8aeaae3e175340d73f5458a
+==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:a7285cf8aeaae3
+######################################################################## 100.0%
+==> Installing dependencies for hadoop: openjdk@11
+==> Installing hadoop dependency: openjdk@11
+==> Pouring openjdk@11--11.0.16.1.monterey.bottle.tar.gz
+🍺  /usr/local/Cellar/openjdk@11/11.0.16.1: 678 files, 299.6MB
+==> Installing hadoop
+==> Pouring hadoop--3.3.4.monterey.bottle.1.tar.gz
+Error: The `brew link` step did not complete successfully
+The formula built, but is not symlinked into /usr/local
+Could not symlink bin/yarn
+Target /usr/local/bin/yarn
+already exists. You may want to remove it:
+  rm '/usr/local/bin/yarn'
+
+To force the link and overwrite all conflicting files:
+  brew link --overwrite hadoop
+
+To list all files that would be deleted:
+  brew link --overwrite --dry-run hadoop
+
+Possible conflicting files are:
+/usr/local/bin/yarn -> /usr/local/lib/node_modules/yarn/bin/yarn.js
+==> Summary
+🍺  /usr/local/Cellar/hadoop/3.3.4: 22,520 files, 1.1GB
+==> Running `brew cleanup hadoop`...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+==> `brew cleanup` has not been run in the last 30 days, running now...
+Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+Removing: /usr/local/Cellar/openjdk@11/11.0.16... (678 files, 299.6MB)
+Removing: /Users/aayush/Library/Caches/Homebrew/openjdk@11--11.0.16... (182.5MB)
+Removing: /Users/aayush/Library/Caches/Homebrew/Cask/temurin--18.0.1,10.pkg... (180.0MB)
+Removing: /Users/aayush/Library/Caches/Homebrew/Cask/zulu11--11.0.16,11.58.15-ca.dmg... (187.4MB)
+Removing: /Users/aayush/Library/Logs/Homebrew/openjdk@11... (64B)
+Removing: /Users/aayush/Library/Logs/Homebrew/jenv... (64B)
+Aayushs-MBP: inventory-management-app/ $ hadoop --version
+-bash: hadoop: command not found
+Aayushs-MBP: inventory-management-app/ $ /usr/libexec/java_home
+/Library/Java/JavaVirtualMachines/jdk-18.0.2.jdk/Contents/Home
+Aayushs-MBP: inventory-management-app/ $ /usr/libexec/java_home
+/Library/Java/JavaVirtualMachines/jdk-18.0.2.jdk/Contents/Home
+Aayushs-MBP: inventory-management-app/ $ ssh localhost
+ssh: connect to host localhost port 22: Connection refused
+Aayushs-MBP: inventory-management-app/ $ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+Generating public/private rsa key pair.
+Your identification has been saved in /Users/aayush/.ssh/id_rsa
+Your public key has been saved in /Users/aayush/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:38aXBqWzKgEK0/va5psLb3aJ4MQHHnHUPAYxEbPeXGU aayush@Aayushs-MacBook-Pro.local
+The key's randomart image is:
++---[RSA 3072]----+
+|     .OB    E    |
+|    . .+=  o     |
+|   . o.. ..   .  |
+|  o +..o .   o   |
+|   = =..S   +    |
+|    B . .. o + . |
+|   o.+ . o. = +  |
+|    .+*.+  o o   |
+|    .*B+ ..      |
++----[SHA256]-----+
+Aayushs-MBP: inventory-management-app/ $ 
+Aayushs-MBP: inventory-management-app/ $ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+Aayushs-MBP: inventory-management-app/ $ chmod 0600 ~/.ssh/authorized_keys
+Aayushs-MBP: inventory-management-app/ $ ssh localhost
+ssh: connect to host localhost port 22: Connection refused
+Aayushs-MBP: inventory-management-app/ $ ssh localhost
+The authenticity of host 'localhost (::1)' can't be established.
+ED25519 key fingerprint is SHA256:/yOkxqWh7yIwjRE3vpP3dl1nQcFZLHWtY9UjTJs8RIY.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? fingerprint
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added 'localhost' (ED25519) to the list of known hosts.
+Last login: Fri Sep  2 11:31:43 2022
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Aayushs-MBP: ~/ $ ssh localhost
+Last login: Fri Sep  2 11:33:23 2022 from ::1
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Aayushs-MBP: ~/ $ cd /usr/local/opt/hadoop
+Aayushs-MBP: hadoop/ $ 
+Aayushs-MBP: hadoop/ $ hdfs namenode -format
+-bash: hdfs: command not found
+Aayushs-MBP: hadoop/ $ 
+Aayushs-MBP: hadoop/ $ hdfs namenode -format
+-bash: hdfs: command not found
+Aayushs-MBP: hadoop/ $ ls
+INSTALL_RECEIPT.json	LICENSE.txt		README.txt		libexec
+LICENSE-binary		NOTICE.txt		bin			sbin
+Aayushs-MBP: hadoop/ $ hdfs namenode -format
+-bash: hdfs: command not found
+Aayushs-MBP: hadoop/ $ bin/hdfs namenode -format
+WARNING: /usr/local/var/hadoop does not exist. Creating.
+2022-09-02 11:35:25,966 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = Aayushs-MacBook-Pro.local/127.0.0.1
+STARTUP_MSG:   args = [-format]
+STARTUP_MSG:   version = 3.3.4
+STARTUP_MSG:   classpath = /usr/local/Cellar/hadoop/3.3.4/libexec/etc/hadoop:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/curator-framework-4.2.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/reload4j-1.2.22.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jackson-core-2.12.7.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/commons-io-2.8.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jetty-util-ajax-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/hadoop-annotations-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/slf4j-api-1.7.36.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/kerby-xdr-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/failureaccess-1.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/checker-qual-2.5.2.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jetty-webapp-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/curator-client-4.2.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/hadoop-auth-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/httpcore-4.4.13.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/snappy-java-1.1.8.2.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/commons-logging-1.1.3.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/kerby-pkix-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/woodstox-core-5.3.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/avro-1.7.7.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/dnsjava-2.1.7.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jetty-io-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/javax.servlet-api-3.1.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/kerb-server-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/hadoop-shaded-guava-1.1.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/commons-cli-1.2.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/guava-27.0-jre.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jcip-annotations-1.0-1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/kerby-asn1-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jsr311-api-1.1.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/stax2-api-4.2.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/kerb-identity-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/kerby-config-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/kerb-util-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jetty-server-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jetty-util-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jersey-json-1.19.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jersey-servlet-1.19.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/zookeeper-jute-3.5.6.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jaxb-api-2.2.11.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/commons-configuration2-2.1.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jakarta.activation-api-1.2.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jetty-servlet-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/commons-compress-1.21.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/curator-recipes-4.2.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/metrics-core-3.2.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jsp-api-2.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/kerb-crypto-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/asm-5.0.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/kerb-admin-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/audience-annotations-0.5.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/j2objc-annotations-1.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jul-to-slf4j-1.7.36.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/paranamer-2.3.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/kerb-client-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/commons-collections-3.2.2.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/commons-codec-1.15.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jettison-1.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/netty-3.10.6.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/token-provider-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/accessors-smart-2.4.7.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jersey-core-1.19.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/json-smart-2.4.7.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/commons-beanutils-1.9.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/kerb-common-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/commons-text-1.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/kerb-simplekdc-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jackson-databind-2.12.7.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jersey-server-1.19.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jackson-annotations-2.12.7.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jsch-0.1.55.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jetty-http-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/re2j-1.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/commons-lang3-3.12.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/kerb-core-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/nimbus-jose-jwt-9.8.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/httpclient-4.5.13.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jetty-xml-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/animal-sniffer-annotations-1.17.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jetty-security-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/commons-net-3.6.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/kerby-util-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jsr305-3.0.2.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/commons-math3-3.1.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/commons-daemon-1.0.13.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/gson-2.8.9.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/hadoop-shaded-protobuf_3_7-1.1.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/lib/zookeeper-3.5.6.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/hadoop-nfs-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/hadoop-common-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/hadoop-common-3.3.4-tests.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/hadoop-kms-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/common/hadoop-registry-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jaxb-impl-2.2.3-1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/curator-framework-4.2.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/reload4j-1.2.22.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-transport-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jackson-core-2.12.7.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/commons-io-2.8.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jetty-util-ajax-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/hadoop-annotations-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-common-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-codec-dns-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-codec-xml-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/kerby-xdr-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/failureaccess-1.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/checker-qual-2.5.2.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-codec-http-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jetty-webapp-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/curator-client-4.2.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/hadoop-auth-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-codec-redis-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/httpcore-4.4.13.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/snappy-java-1.1.8.2.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jackson-jaxrs-1.9.13.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-transport-native-epoll-4.1.77.Final-linux-x86_64.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/kerby-pkix-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/woodstox-core-5.3.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/avro-1.7.7.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/dnsjava-2.1.7.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/kotlin-stdlib-common-1.4.10.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-resolver-dns-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jetty-io-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-resolver-dns-classes-macos-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-codec-haproxy-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-transport-native-epoll-4.1.77.Final-linux-aarch_64.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-codec-http2-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/javax.servlet-api-3.1.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/kerb-server-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/hadoop-shaded-guava-1.1.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-all-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-codec-smtp-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-handler-proxy-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/guava-27.0-jre.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-transport-rxtx-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jcip-annotations-1.0-1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/kerby-asn1-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/kotlin-stdlib-1.4.10.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jsr311-api-1.1.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/stax2-api-4.2.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jackson-xc-1.9.13.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/kerb-identity-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/kerby-config-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/kerb-util-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-resolver-dns-native-macos-4.1.77.Final-osx-x86_64.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-codec-mqtt-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jetty-server-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jetty-util-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jersey-json-1.19.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-codec-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jersey-servlet-1.19.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-transport-sctp-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/zookeeper-jute-3.5.6.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jaxb-api-2.2.11.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/json-simple-1.1.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/commons-configuration2-2.1.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jakarta.activation-api-1.2.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jetty-servlet-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/commons-compress-1.21.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-transport-native-kqueue-4.1.77.Final-osx-x86_64.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/curator-recipes-4.2.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-buffer-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-transport-native-kqueue-4.1.77.Final-osx-aarch_64.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/kerb-crypto-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/asm-5.0.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/kerb-admin-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/audience-annotations-0.5.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/j2objc-annotations-1.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-transport-classes-kqueue-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/paranamer-2.3.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/kerb-client-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/commons-collections-3.2.2.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/commons-codec-1.15.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jettison-1.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-3.10.6.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-resolver-dns-native-macos-4.1.77.Final-osx-aarch_64.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/token-provider-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/accessors-smart-2.4.7.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jersey-core-1.19.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-transport-udt-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/json-smart-2.4.7.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/commons-beanutils-1.9.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/kerb-common-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/commons-text-1.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-resolver-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/kerb-simplekdc-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jackson-databind-2.12.7.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jersey-server-1.19.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jackson-annotations-2.12.7.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jsch-0.1.55.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/okio-2.8.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jetty-http-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/re2j-1.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-handler-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/commons-lang3-3.12.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/kerb-core-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/nimbus-jose-jwt-9.8.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/httpclient-4.5.13.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jetty-xml-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-transport-native-unix-common-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/animal-sniffer-annotations-1.17.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jetty-security-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/okhttp-4.9.3.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/commons-net-3.6.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/kerby-util-1.0.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-transport-classes-epoll-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jsr305-3.0.2.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/commons-math3-3.1.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-codec-memcache-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-codec-socks-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/gson-2.8.9.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/netty-codec-stomp-4.1.77.Final.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/hadoop-shaded-protobuf_3_7-1.1.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/lib/zookeeper-3.5.6.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/hadoop-hdfs-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/hadoop-hdfs-native-client-3.3.4-tests.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/hadoop-hdfs-rbf-3.3.4-tests.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/hadoop-hdfs-client-3.3.4-tests.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/hadoop-hdfs-rbf-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/hadoop-hdfs-native-client-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/hadoop-hdfs-client-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/hadoop-hdfs-nfs-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/hadoop-hdfs-3.3.4-tests.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/hdfs/hadoop-hdfs-httpfs-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.3.4-tests.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/mapreduce/hadoop-mapreduce-client-common-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/mapreduce/hadoop-mapreduce-client-uploader-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/mapreduce/hadoop-mapreduce-client-nativetask-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/mapreduce/hadoop-mapreduce-client-app-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/javax.websocket-api-1.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/jakarta.xml.bind-api-2.3.2.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/jackson-jaxrs-base-2.12.7.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/jersey-guice-1.19.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/aopalliance-1.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/java-util-1.9.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/asm-analysis-9.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/websocket-api-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/websocket-servlet-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/jersey-client-1.19.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/jackson-jaxrs-json-provider-2.12.7.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/geronimo-jcache_1.0_spec-1.0-alpha-1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/objenesis-2.6.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/asm-tree-9.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/jline-3.9.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/websocket-client-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/jetty-annotations-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/fst-2.50.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/asm-commons-9.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/guice-servlet-4.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/websocket-common-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/snakeyaml-1.26.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/mssql-jdbc-6.2.1.jre7.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/jetty-plus-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/metrics-core-3.2.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/javax-websocket-server-impl-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/jetty-jndi-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/javax.websocket-client-api-1.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/ehcache-3.3.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/javax-websocket-client-impl-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/bcprov-jdk15on-1.60.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/HikariCP-java7-2.4.12.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/jna-5.2.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/json-io-2.5.1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/jetty-client-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/guice-4.0.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/websocket-server-9.4.43.v20210629.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/jackson-module-jaxb-annotations-2.12.7.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/javax.inject-1.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/bcpkix-jdk15on-1.60.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/lib/swagger-annotations-1.5.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/hadoop-yarn-server-common-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/hadoop-yarn-server-router-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/hadoop-yarn-applications-mawo-core-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/hadoop-yarn-services-core-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/hadoop-yarn-client-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/hadoop-yarn-services-api-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/hadoop-yarn-common-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/hadoop-yarn-server-web-proxy-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/hadoop-yarn-server-nodemanager-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/hadoop-yarn-server-tests-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/hadoop-yarn-api-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/hadoop-yarn-server-timeline-pluginstorage-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/hadoop-yarn-registry-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-3.3.4.jar:/usr/local/Cellar/hadoop/3.3.4/libexec/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-3.3.4.jar
+STARTUP_MSG:   build = https://github.com/apache/hadoop.git -r a585a73c3e02ac62350c136643a5e7f6095a3dbb; compiled by 'stevel' on 2022-07-29T12:32Z
+STARTUP_MSG:   java = 18.0.2
+************************************************************/
+2022-09-02 11:35:25,983 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2022-09-02 11:35:26,128 INFO namenode.NameNode: createNameNode [-format]
+2022-09-02 11:35:26,322 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2022-09-02 11:35:26,713 INFO namenode.NameNode: Formatting using clusterid: CID-bfed130c-1e1f-44dc-9267-f287a0302fe5
+2022-09-02 11:35:26,751 INFO namenode.FSEditLog: Edit logging is async:true
+2022-09-02 11:35:26,785 INFO namenode.FSNamesystem: KeyProvider: null
+2022-09-02 11:35:26,786 INFO namenode.FSNamesystem: fsLock is fair: true
+2022-09-02 11:35:26,787 INFO namenode.FSNamesystem: Detailed lock hold time metrics enabled: false
+2022-09-02 11:35:26,830 INFO namenode.FSNamesystem: fsOwner                = aayush (auth:SIMPLE)
+2022-09-02 11:35:26,830 INFO namenode.FSNamesystem: supergroup             = supergroup
+2022-09-02 11:35:26,830 INFO namenode.FSNamesystem: isPermissionEnabled    = true
+2022-09-02 11:35:26,830 INFO namenode.FSNamesystem: isStoragePolicyEnabled = true
+2022-09-02 11:35:26,830 INFO namenode.FSNamesystem: HA Enabled: false
+2022-09-02 11:35:26,885 INFO common.Util: dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2022-09-02 11:35:26,899 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2022-09-02 11:35:26,899 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2022-09-02 11:35:26,902 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2022-09-02 11:35:26,902 INFO blockmanagement.BlockManager: The block deletion will start around 2022 Sep 02 11:35:26
+2022-09-02 11:35:26,904 INFO util.GSet: Computing capacity for map BlocksMap
+2022-09-02 11:35:26,904 INFO util.GSet: VM type       = 64-bit
+2022-09-02 11:35:26,906 INFO util.GSet: 2.0% max memory 4 GB = 81.9 MB
+2022-09-02 11:35:26,906 INFO util.GSet: capacity      = 2^23 = 8388608 entries
+2022-09-02 11:35:26,930 INFO blockmanagement.BlockManager: Storage policy satisfier is disabled
+2022-09-02 11:35:26,930 INFO blockmanagement.BlockManager: dfs.block.access.token.enable = false
+2022-09-02 11:35:26,936 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.threshold-pct = 0.999
+2022-09-02 11:35:26,936 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.min.datanodes = 0
+2022-09-02 11:35:26,937 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.extension = 30000
+2022-09-02 11:35:26,938 INFO blockmanagement.BlockManager: defaultReplication         = 1
+2022-09-02 11:35:26,938 INFO blockmanagement.BlockManager: maxReplication             = 512
+2022-09-02 11:35:26,938 INFO blockmanagement.BlockManager: minReplication             = 1
+2022-09-02 11:35:26,938 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+2022-09-02 11:35:26,938 INFO blockmanagement.BlockManager: redundancyRecheckInterval  = 3000ms
+2022-09-02 11:35:26,939 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+2022-09-02 11:35:26,939 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2022-09-02 11:35:26,966 INFO namenode.FSDirectory: GLOBAL serial map: bits=29 maxEntries=536870911
+2022-09-02 11:35:26,966 INFO namenode.FSDirectory: USER serial map: bits=24 maxEntries=16777215
+2022-09-02 11:35:26,966 INFO namenode.FSDirectory: GROUP serial map: bits=24 maxEntries=16777215
+2022-09-02 11:35:26,966 INFO namenode.FSDirectory: XATTR serial map: bits=24 maxEntries=16777215
+2022-09-02 11:35:26,983 INFO util.GSet: Computing capacity for map INodeMap
+2022-09-02 11:35:26,983 INFO util.GSet: VM type       = 64-bit
+2022-09-02 11:35:26,983 INFO util.GSet: 1.0% max memory 4 GB = 41.0 MB
+2022-09-02 11:35:26,983 INFO util.GSet: capacity      = 2^22 = 4194304 entries
+2022-09-02 11:35:26,993 INFO namenode.FSDirectory: ACLs enabled? true
+2022-09-02 11:35:26,993 INFO namenode.FSDirectory: POSIX ACL inheritance enabled? true
+2022-09-02 11:35:26,993 INFO namenode.FSDirectory: XAttrs enabled? true
+2022-09-02 11:35:26,993 INFO namenode.NameNode: Caching file names occurring more than 10 times
+2022-09-02 11:35:26,999 INFO snapshot.SnapshotManager: Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2022-09-02 11:35:27,001 INFO snapshot.SnapshotManager: SkipList is disabled
+2022-09-02 11:35:27,005 INFO util.GSet: Computing capacity for map cachedBlocks
+2022-09-02 11:35:27,005 INFO util.GSet: VM type       = 64-bit
+2022-09-02 11:35:27,005 INFO util.GSet: 0.25% max memory 4 GB = 10.2 MB
+2022-09-02 11:35:27,005 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+2022-09-02 11:35:27,016 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2022-09-02 11:35:27,016 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2022-09-02 11:35:27,016 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2022-09-02 11:35:27,020 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+2022-09-02 11:35:27,021 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2022-09-02 11:35:27,024 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+2022-09-02 11:35:27,024 INFO util.GSet: VM type       = 64-bit
+2022-09-02 11:35:27,024 INFO util.GSet: 0.029999999329447746% max memory 4 GB = 1.2 MB
+2022-09-02 11:35:27,024 INFO util.GSet: capacity      = 2^17 = 131072 entries
+2022-09-02 11:35:27,047 INFO namenode.FSImage: Allocated new BlockPoolId: BP-42743259-127.0.0.1-1662098727039
+2022-09-02 11:35:27,096 INFO common.Storage: Storage directory /usr/local/Cellar/hadoop/hdfs/tmp/dfs/name has been successfully formatted.
+2022-09-02 11:35:27,132 INFO namenode.FSImageFormatProtobuf: Saving image file /usr/local/Cellar/hadoop/hdfs/tmp/dfs/name/current/fsimage.ckpt_0000000000000000000 using no compression
+2022-09-02 11:35:27,253 INFO namenode.FSImageFormatProtobuf: Image file /usr/local/Cellar/hadoop/hdfs/tmp/dfs/name/current/fsimage.ckpt_0000000000000000000 of size 401 bytes saved in 0 seconds .
+2022-09-02 11:35:27,302 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+2022-09-02 11:35:27,332 INFO namenode.FSNamesystem: Stopping services started for active state
+2022-09-02 11:35:27,333 INFO namenode.FSNamesystem: Stopping services started for standby state
+2022-09-02 11:35:27,342 INFO namenode.FSImage: FSImageSaver clean checkpoint: txid=0 when meet shutdown.
+2022-09-02 11:35:27,344 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at Aayushs-MacBook-Pro.local/127.0.0.1
+************************************************************/
+Aayushs-MBP: hadoop/ $ pwd
+/usr/local/opt/hadoop
+Aayushs-MBP: hadoop/ $ source ~/.bash_profile
+Aayushs-MBP: hadoop/ $ hstart
+WARNING: Attempting to start all Apache Hadoop daemons as aayush in 10 seconds.
+WARNING: This is not a recommended production deployment configuration.
+WARNING: Use CTRL-C to abort.
+^CAayushs-MBP: hadoop/ $ hstart
+WARNING: Attempting to start all Apache Hadoop daemons as aayush in 10 seconds.
+WARNING: This is not a recommended production deployment configuration.
+WARNING: Use CTRL-C to abort.
+Starting namenodes on [localhost]
+localhost: tput: No value for $TERM and no -T specified
+localhost: /Users/aayush/.bashrc: line 3: q: command not found
+localhost: /Users/aayush/.bashrc: line 4: q: command not found
+localhost: WARNING: /usr/local/Cellar/hadoop/3.3.4/libexec/logs does not exist. Creating.
+Starting datanodes
+localhost: tput: No value for $TERM and no -T specified
+localhost: /Users/aayush/.bashrc: line 3: q: command not found
+localhost: /Users/aayush/.bashrc: line 4: q: command not found
+Starting secondary namenodes [Aayushs-MacBook-Pro.local]
+Aayushs-MacBook-Pro.local: Warning: Permanently added 'aayushs-macbook-pro.local' (ED25519) to the list of known hosts.
+Aayushs-MacBook-Pro.local: tput: No value for $TERM and no -T specified
+Aayushs-MacBook-Pro.local: /Users/aayush/.bashrc: line 3: q: command not found
+Aayushs-MacBook-Pro.local: /Users/aayush/.bashrc: line 4: q: command not found
+2022-09-02 11:39:23,973 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Starting resourcemanager
+Starting nodemanagers
+localhost: tput: No value for $TERM and no -T specified
+localhost: /Users/aayush/.bashrc: line 3: q: command not found
+localhost: /Users/aayush/.bashrc: line 4: q: command not found
+Aayushs-MBP: hadoop/ $ hstop
+WARNING: Stopping all Apache Hadoop daemons as aayush in 10 seconds.
+WARNING: Use CTRL-C to abort.
+Stopping namenodes on [localhost]
+localhost: tput: No value for $TERM and no -T specified
+localhost: /Users/aayush/.bashrc: line 3: q: command not found
+localhost: /Users/aayush/.bashrc: line 4: q: command not found
+Stopping datanodes
+localhost: tput: No value for $TERM and no -T specified
+localhost: /Users/aayush/.bashrc: line 3: q: command not found
+localhost: /Users/aayush/.bashrc: line 4: q: command not found
+Stopping secondary namenodes [Aayushs-MacBook-Pro.local]
+Aayushs-MacBook-Pro.local: tput: No value for $TERM and no -T specified
+Aayushs-MacBook-Pro.local: /Users/aayush/.bashrc: line 3: q: command not found
+Aayushs-MacBook-Pro.local: /Users/aayush/.bashrc: line 4: q: command not found
+2022-09-02 11:40:29,495 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Stopping nodemanagers
+localhost: tput: No value for $TERM and no -T specified
+localhost: /Users/aayush/.bashrc: line 3: q: command not found
+localhost: /Users/aayush/.bashrc: line 4: q: command not found
+Stopping resourcemanager
+Aayushs-MBP: hadoop/ $ 

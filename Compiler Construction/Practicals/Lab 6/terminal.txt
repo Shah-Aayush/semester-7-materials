@@ -1,0 +1,7 @@
+> ./a.out
+Enter the expression: x=(a/b)*c+d;
+Three Address Code
+t1 = a/b
+t2 = t1*c
+t3 = t2+d
+x = t3
