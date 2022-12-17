@@ -6,4 +6,6 @@
 - [difference b/w OLAP and OLTP](https://www.geeksforgeeks.org/difference-between-olap-and-oltp-in-dbms/)
 - [hadoop file read operation](https://youtu.be/2E-rjuKVEh8)
 - [hadoop file write operation](https://youtu.be/hwCh4OMjLK0)
-- 
+
+---
+- [apache hive youtube video](https://www.youtube.com/watch?v=I03z7GbNaAA)
