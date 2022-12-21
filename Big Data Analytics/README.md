@@ -9,3 +9,17 @@
 
 ---
 - [apache hive youtube video](https://www.youtube.com/watch?v=I03z7GbNaAA)
+- [pig](https://www.geeksforgeeks.org/introduction-to-apache-pig/)
+
+
+---
+
+## Topics
+- case study
+- hadoop
+- no sql
+- mongodb
+- cassandra
+- apache spark
+- pig
+- apache hive
