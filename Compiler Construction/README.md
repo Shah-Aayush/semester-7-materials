@@ -11,3 +11,6 @@
 - [nice informative pdf](https://www.lnjpitchapra.in/wp-content/uploads/2020/03/file_5e8025e0b1cb2.pdf)
 - [operator grammer](https://www.geeksforgeeks.org/operator-grammar-and-precedence-parser-in-toc/)
 - [error detection and recovery](https://www.geeksforgeeks.org/error-detection-recovery-compiler/)
+- [s attribute vs l attribute](https://www.geeksforgeeks.org/differences-between-synthesized-and-inherited-attributes/#:~:text=1.-,An%20attribute%20is%20said%20to%20be%20Synthesized%20attribute%20if%20its,parent%20and%2For%20siblings%20node.)
+- [sdd and sdt](http://www.cse.iitm.ac.in/~krishna/cs3300/lecture4.pdf)
+- [symbol table](https://www.geeksforgeeks.org/symbol-table-compiler/)
