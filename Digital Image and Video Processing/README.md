@@ -13,3 +13,5 @@
 - [piece wise linear  transformation](https://www.geeksforgeeks.org/piece-wise-linear-transformation/#:~:text=Piece%2Dwise%20Linear%20Transformation%20is,original%20for%20a%20specific%20application.)
 - [morphological image processing](https://towardsdatascience.com/understanding-morphological-image-processing-and-its-operations-7bcf1ed11756)
 - [low pass and high pass filter](https://www.javatpoint.com/dip-high-pass-vs-low-pass-filters)
+- [edge detection](https://www.javatpoint.com/dip-concept-of-edge-detection)
+- [representation and description](https://www.ece.mcmaster.ca/~shirani/ip12/chapter11.pdf)
