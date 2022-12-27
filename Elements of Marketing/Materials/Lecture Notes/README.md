@@ -268,3 +268,56 @@
 		- life cycle stage
 		- wealth
 	
+# Marketing logistics
+- warehouses and transport carriers that will deliever goods at the final destination
+- supply chain management : physical distribution at broader concept
+	- start before physical distribution
+- SCM includes
+	- procurement of inputs
+	- inbound logistics
+	- production (transportation of input to output)
+	- physical distribution (marketing logistics)
+	- channel function
+
+- marketing logistics activities
+	- production plan
+	- sales forecasting
+	- order processing
+	- transportation
+	- inventory management
+	- customer delievering & servicing
+	
+
+
+# Price
+
+- Objective of pricing
+	- to maximize profit
+	- to keep stable prices
+	- to fatce the competition
+	- to achieve target return
+	- to achieve resource globalization
+	- to expedite tax collection
+
+- How to set the price policy
+	- selecting the pricing objective
+		- survival
+		- max current profit
+		- max market share
+		- max market skimming
+		- product quality leadership
+	- determinig demand
+	- estimating cost
+		- celing price (demand)
+		- competitor price (price of substitute)
+		- cost/floor price (cost)
+	- analysinbg competitor cost/price/offer
+	- selecting a pricing method
+		- cost + pricing
+		- skimming
+		- penetration
+		- what the traffic can afford
+		- target role of return
+		- perceive value pricing
+	- selecting final price
+	
